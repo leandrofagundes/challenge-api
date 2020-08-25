@@ -1,10 +1,10 @@
-﻿using Challenge.Application.Services.Countries.DTOs;
+﻿using Challenge.Domain.Interfaces;
 using System.Threading.Tasks;
 
 namespace Challenge.Application.Services.Countries
 {
     public interface ICountriesService
     {
-        Task<CountryDTO[]> GetAll();
+        Task<ICountry[]> GetAll();
     }
 }

@@ -5,11 +5,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="UseCases\V1\Countries\Find\" />
+    <ProjectReference Include="..\..\Core\Challenge.Application\Challenge.Application.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Challenge.Domain\Challenge.Domain.csproj" />
+    <Folder Include="APIClient\" />
   </ItemGroup>
 
 </Project>

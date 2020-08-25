@@ -24,9 +24,9 @@ namespace Challenge.Application.UseCases.V1.Countries.Get
 
             var outputDataCountries = countries.Select(country => new OutputDataCountryItem(
                 country.Name,
-                country.CIOC,
+                country.Abbreviation,
                 country.Currencies.Select(currency => new OutputDataCountryCurrencyItem(currency.Name)).ToArray(),
-                country.RegionalBlocs.Select(regionalBloc => new OutputDataCountryRegionalBlocItem(regionalBloc.Name)).ToArray()
+                country.EconomicGroups.Select(regionalBloc => new OutputDataCountryRegionalBlocItem(regionalBloc.Name)).ToArray()
                 ));
 
             var outputData = new OutputData(outputDataCountries);

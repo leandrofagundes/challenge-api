@@ -1,4 +1,4 @@
-﻿namespace Challenge.Application.Services.Countries.DTOs
+﻿namespace Challenge.CountryServiceProxy.DTOs
 {
     public sealed class CountryDTO
     {
