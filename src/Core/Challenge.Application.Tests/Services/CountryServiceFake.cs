@@ -10,7 +10,7 @@ namespace Challenge.Application.Tests.Services
     public sealed class CountryServiceFake :
         ICountriesService
     {
-        public Task<ICountry[]> GetAll()
+        public Task<IEnumerable<ICountry>> GetAll()
         {
             var listCountries = new List<Country>
             {
@@ -40,7 +40,7 @@ namespace Challenge.Application.Tests.Services
                     new EconomicBloc[]{new EconomicBloc("NAFTA", "North American Free Trade Agreement") })
             };
 
-            return Task.FromResult(listCountries.Cast<ICountry>().ToArray());
+            return Task.FromResult(listCountries.Cast<ICountry>());
         }
     }
 }

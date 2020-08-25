@@ -19,7 +19,21 @@ namespace Challenge.Application.Tests.UseCases.V1.Get
             var presenter = new Presenter();
 
             var useCase = new UseCase(
-                _fixture.CountryService,
+                _fixture.CountryServiceFake,
+                presenter);
+
+            await useCase.Execute(new InputData());
+
+            Assert.NotEmpty(presenter.OutputData.Countries);
+        }
+
+        [Fact]
+        public async Task GetAllFromApi_ShouldSuccess()
+        {
+            var presenter = new Presenter();
+
+            var useCase = new UseCase(
+                _fixture.CountryServiceAPI,
                 presenter);
 
             await useCase.Execute(new InputData());

@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
@@ -7,9 +7,8 @@
   <ItemGroup>
     <ProjectReference Include="..\..\Core\Challenge.Application\Challenge.Application.csproj" />
   </ItemGroup>
-
   <ItemGroup>
-    <Folder Include="APIClient\" />
+    <PackageReference Include="System.Text.Json" Version="4.7.2" />
   </ItemGroup>
 
 </Project>
