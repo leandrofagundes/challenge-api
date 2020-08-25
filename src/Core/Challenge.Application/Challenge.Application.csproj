@@ -5,10 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="UseCases\V1\Countries\Find\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\Challenge.Domain\Challenge.Domain.csproj" />
   </ItemGroup>
 

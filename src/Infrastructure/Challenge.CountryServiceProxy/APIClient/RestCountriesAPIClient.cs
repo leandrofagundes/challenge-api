@@ -20,7 +20,7 @@ namespace Challenge.CountryServiceProxy.APIClient
         public async Task<CountryDTO[]> GetAll()
         {
             CountryDTO[] countries = null;
-            var response = await _httpClient.GetAsync("v2/all");
+            var response = await _httpClient.GetAsync("v2/all?fields=name;cioc;currencies;flag;regionalBlocs;population;timezones;languages;capital;borders");
             if (response.IsSuccessStatusCode)
             {
                 var jsonResult = await response.Content.ReadAsStringAsync();
