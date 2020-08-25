@@ -23,6 +23,11 @@ namespace Challenge.CountryServiceProxy
             _restCountriesAPIClient = restCountriesAPIClient;
         }
 
+        public ICountry Find(string name)
+        {
+            return _inMemoryCacheDb.Find(name);
+        }
+
         public async Task<IEnumerable<ICountry>> GetAll()
         {
             if (_inMemoryCacheDb.IsEmpty())

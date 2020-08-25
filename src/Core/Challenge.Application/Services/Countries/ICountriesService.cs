@@ -7,6 +7,6 @@ namespace Challenge.Application.Services.Countries
     public interface ICountriesService
     {
         Task<IEnumerable<ICountry>> GetAll();
-        Task<ICountry> Find();
+        ICountry Find(string numericCode);
     }
 }

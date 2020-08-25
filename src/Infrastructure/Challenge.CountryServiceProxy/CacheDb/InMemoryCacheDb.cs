@@ -1,5 +1,8 @@
 ﻿using Challenge.CountryServiceProxy.Entities;
+using Challenge.Domain.Interfaces;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Linq;
 using System.Timers;
 
 namespace Challenge.CountryServiceProxy.CacheDb
@@ -36,14 +39,20 @@ namespace Challenge.CountryServiceProxy.CacheDb
             _timer.Start();
         }
 
+        public ICountry Find(string name)
+        {
+            return _cache.FirstOrDefault(country => country.Name.Equals(name));
+        }
+
         public void Add(IEnumerable<Country> countries)
         {
+            _cache.Clear();
             _cache.AddRange(countries);
         }
 
-        internal IEnumerable<Country> GetAll()
+        internal IReadOnlyCollection<Country> GetAll()
         {
-            return _cache;
+            return new ReadOnlyCollection<Country>(_cache);
         }
     }
 }

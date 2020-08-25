@@ -32,6 +32,8 @@ namespace Challenge.Application.UseCases.V1.Countries.Get
             var outputData = new OutputData(outputDataCountries);
 
             _outputPort.Success(outputData);
+
+            await Task.CompletedTask;
         }
     }
 }

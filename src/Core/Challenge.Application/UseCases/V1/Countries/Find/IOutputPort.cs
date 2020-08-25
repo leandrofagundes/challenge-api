@@ -1,10 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using Challenge.Application.Boundaries;
 
 namespace Challenge.Application.UseCases.V1.Countries.Find
 {
-    interface IOutputPort
+    public interface IOutputPort :
+        IOutputPortSuccess<OutputData>,
+        IOutputPortNotFound
     {
+
     }
 }

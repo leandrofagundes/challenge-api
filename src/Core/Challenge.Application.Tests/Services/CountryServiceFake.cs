@@ -10,9 +10,10 @@ namespace Challenge.Application.Tests.Services
     public sealed class CountryServiceFake :
         ICountriesService
     {
-        public Task<IEnumerable<ICountry>> GetAll()
+        private readonly List<Country> _countries;
+        public CountryServiceFake()
         {
-            var listCountries = new List<Country>
+            _countries = new List<Country>
             {
                 new Country(
                     "Brazil",
@@ -33,14 +34,24 @@ namespace Challenge.Application.Tests.Services
                     new Currency[]{new Currency("USD", "United States dollar", "$")},
                     new EconomicBloc[]{new EconomicBloc("NAFTA", "North American Free Trade Agreement") }),
                 new Country(
-                    "United States of America",
-                    "USA",
+                    "United States of Canada",
+                    "CAN",
                     "",
                     new Currency[]{new Currency("USD", "United States dollar", "$")},
                     new EconomicBloc[]{new EconomicBloc("NAFTA", "North American Free Trade Agreement") })
             };
+        }
 
-            return Task.FromResult(listCountries.Cast<ICountry>());
+
+        public ICountry Find(string name)
+        {
+            var countryByCode = _countries.FirstOrDefault(country => country.Name == name);
+            return countryByCode;
+        }
+
+        public Task<IEnumerable<ICountry>> GetAll()
+        {
+            return Task.FromResult(_countries.Cast<ICountry>());
         }
     }
 }
