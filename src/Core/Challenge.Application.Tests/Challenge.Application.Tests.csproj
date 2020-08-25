@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="UseCases\V1\" />
+    <ProjectReference Include="..\Challenge.Application\Challenge.Application.csproj" />
   </ItemGroup>
 
 </Project>
