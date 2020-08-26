@@ -1,0 +1,65 @@
+﻿@page "/countries"
+
+<h1>Países</h1>
+
+
+<EditForm Model="CountriesSearchRequestData" OnValidSubmit="SearchCountriesSubmit">
+    <div class="row">
+        <div class="form-group col-md-10">
+            <InputText @bind-Value="CountriesSearchRequestData.Filter" disabled="@IsLoading" class="form-control" placeholder="Informe o nome do país, a sigla ou a moeda para pesquisar" />
+        </div>
+        <div class="col-md-2">
+            <button type="submit" class="btn btn-primary" disabled="@IsLoading">Pesquisar</button>
+        </div>
+    </div>
+</EditForm>
+
+<hr />
+@if (IsLoading)
+{
+    <div class="d-flex justify-content-center">
+        <div class="spinner-border" role="status">
+            <span class="sr-only">Carregando...</span>
+        </div>
+    </div>
+}
+else
+{
+
+    <table class="table table-striped table-bordered table-round-corner w-100 mb-5">
+        <thead>
+            <tr>
+                <th class="pl-3">Nome</th>
+                <th class="pl-3">Sigla</th>
+                <th class="pl-3">Moedas</th>
+                <th></th>
+                <th class="pl-3">Blocos Econômicos</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+
+            @if (Countries is null || !Countries.Any())
+            {
+                <tr>
+                    <td colspan="6">Nenhum registro encontrado</td>
+                </tr>
+            }
+            else
+            {
+                @foreach (var country in Countries)
+                {
+                    <tr>
+                        <td class="pl-2">@country.Name</td>
+                        <td class="pl-2">@country.Abbreviation</td>
+                        <td class="pl-2">@country.Currencies</td>
+                        <td class="text-center"><img src="@country.Flag" width="24" height="24" alt="@country.Name" /></td>
+                        <td class="pl-2">@country.EconomicBlocs</td>
+                        <td><span class="btn btn-success" value="Detalhes" @onclick="()=>NavigateToCountryDetails(country.Name)">Detalhes</span></td>
+                    </tr>
+                }
+            }
+
+        </tbody>
+    </table>
+}

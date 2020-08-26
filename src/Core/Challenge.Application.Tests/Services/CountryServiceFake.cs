@@ -19,26 +19,38 @@ namespace Challenge.Application.Tests.Services
                     "Brazil",
                     "BRA",
                     "",
-                    new Currency[]{new Currency("BRL","Brazilian Real","R$")},
-                    new EconomicBloc[]{new EconomicBloc("USAN", "Union of South American Nations") }),
-                new Country(
-                    "Argentina",
-                    "ARG",
+                    0,
                     "",
-                    new Currency[]{new Currency("ARG","Argentinian pesos","$")},
-                    new EconomicBloc[]{new EconomicBloc("USAN", "Union of South American Nations") }),
+                    new Currency[]{new Currency("BRL","Brazilian Real","R$")},
+                    new EconomicBloc[]{new EconomicBloc("USAN", "Union of South American Nations") },
+                    new string[]{ },new string[]{ },new string[]{ }),
+                new Country(
+                "Argentina",
+                "ARG",
+                "",
+                0,
+                "",
+                new Currency[] { new Currency("ARG", "Argentinian pesos", "$") },
+                new EconomicBloc[] { new EconomicBloc("USAN", "Union of South American Nations") },
+                    new string[]{ },new string[]{ },new string[]{ }),
                 new Country(
                     "United States of America",
                     "USA",
                     "",
-                    new Currency[]{new Currency("USD", "United States dollar", "$")},
-                    new EconomicBloc[]{new EconomicBloc("NAFTA", "North American Free Trade Agreement") }),
+                    0,
+                    "",
+                    new Currency[] { new Currency("USD", "United States dollar", "$") },
+                    new EconomicBloc[] { new EconomicBloc("NAFTA", "North American Free Trade Agreement") },
+                    new string[]{ },new string[]{ },new string[]{ }),
                 new Country(
                     "United States of Canada",
                     "CAN",
                     "",
-                    new Currency[]{new Currency("USD", "United States dollar", "$")},
-                    new EconomicBloc[]{new EconomicBloc("NAFTA", "North American Free Trade Agreement") })
+                    0,
+                    "",
+                    new Currency[] { new Currency("USD", "United States dollar", "$") },
+                    new EconomicBloc[] { new EconomicBloc("NAFTA", "North American Free Trade Agreement") },
+                    new string[]{ },new string[]{ },new string[]{ })
             };
         }
 
@@ -52,6 +64,21 @@ namespace Challenge.Application.Tests.Services
         public Task<IEnumerable<ICountry>> GetAll()
         {
             return Task.FromResult(_countries.Cast<ICountry>());
+        }
+
+        public Task<IEnumerable<ICountry>> GetAll(string filter)
+        {
+            if (string.IsNullOrWhiteSpace(filter))
+                filter = string.Empty;
+
+            var normalizedFilter = filter.ToLower().Trim();
+
+            var filteredCountries = _countries.Where(
+               country => country.Name.ToLower().Contains(normalizedFilter) ||
+               (country.Abbreviation != null && country.Abbreviation.ToLower().Contains(normalizedFilter)) ||
+               country.Currencies.Any(currency => currency.Name.ToLower().Contains(normalizedFilter))).ToList();
+
+            return Task.FromResult(filteredCountries.Cast<ICountry>());
         }
     }
 }

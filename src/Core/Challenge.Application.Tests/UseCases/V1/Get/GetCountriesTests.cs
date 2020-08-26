@@ -1,5 +1,6 @@
 ﻿using Challenge.Application.Tests.Fixtures;
 using Challenge.Application.UseCases.V1.Countries.Get;
+using System.Threading;
 using System.Threading.Tasks;
 using Xunit;
 
@@ -22,23 +23,25 @@ namespace Challenge.Application.Tests.UseCases.V1.Get
                 _fixture.CountryServiceFake,
                 presenter);
 
-            await useCase.Execute(new InputData(string.Empty));
+            var cancellationTokenSource = new CancellationTokenSource();
+            await useCase.Execute(new InputData(string.Empty), cancellationTokenSource.Token);
 
             Assert.NotEmpty(presenter.OutputData.Countries);
         }
 
-        ////[Fact]
-        ////public async Task GetAllFromApi_ShouldSuccess()
-        ////{
-        ////    var presenter = new Presenter();
+        [Fact]
+        public async Task GetAllFromApi_ShouldSuccess()
+        {
+            var presenter = new Presenter();
 
-        ////    var useCase = new UseCase(
-        ////        _fixture.CountryServiceAPI,
-        ////        presenter);
+            var useCase = new UseCase(
+                _fixture.CountryServiceAPI,
+                presenter);
 
-        ////    await useCase.Execute(new InputData(string.Empty));
+            var cancellationTokenSource = new CancellationTokenSource();
+            await useCase.Execute(new InputData(string.Empty), cancellationTokenSource.Token);
 
-        ////    Assert.NotEmpty(presenter.OutputData.Countries);
-        ////}
+            Assert.NotEmpty(presenter.OutputData.Countries);
+        }
     }
 }

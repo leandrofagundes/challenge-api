@@ -25,11 +25,12 @@
             <response code="404">Não foi encontrado nenhum conteúdo para o país informado.</response>
             <response code="500">Ocorreu um erro no servidor.</response>
         </member>
-        <member name="M:Challenge.API.UseCases.V1.Countries.Get.CountriesController.Get(System.String)">
+        <member name="M:Challenge.API.UseCases.V1.Countries.Get.CountriesController.Get(System.String,System.Threading.CancellationToken)">
             <summary>
             Busca uma lista de países baseado no filtro informado.
             </summary>
             <param name="filter">Filtro que pode ser utilizado para pesquisa com base no nome do país, sigla ou moeda.</param>
+            <param name="token">Cancellation Token usado quando o ponto que fez a requisição quiser desistir da consulta.</param>
             <returns>O retorno <see cref="F:Microsoft.AspNetCore.Http.StatusCodes.Status200OK"/> contendo a lista de países encontrados. Essa lista pode ser vazia.</returns>
             <response code="500">Ocorreu um erro no servidor.</response>
         </member>

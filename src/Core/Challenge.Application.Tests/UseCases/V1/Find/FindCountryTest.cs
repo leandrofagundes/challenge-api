@@ -26,7 +26,7 @@ namespace Challenge.Application.Tests.UseCases.V1.Find
 
             await useCase.Execute(new InputData(name));
 
-            Assert.Equal("BRA", presenter.OutputData.CIOC);
+            Assert.Equal("BRA", presenter.OutputData.Abbreviation);
         }
     }
 }

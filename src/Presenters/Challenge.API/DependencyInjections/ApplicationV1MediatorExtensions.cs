@@ -26,11 +26,11 @@ namespace Challenge.API.DependencyInjections
 
         private static void AddIdentitiesUsersMediator(IPipelineProviderBuilder builder)
         {
-            builder.On<Challenge.Application.UseCases.V1.Countries.Get.InputData>().PipelineAsync()
-                .Call<Challenge.Application.UseCases.V1.Countries.Get.IUseCase>((handler, request) => handler.Execute(request));
+            builder.On<Application.UseCases.V1.Countries.Get.InputData>().CancellablePipelineAsync()
+                .Call<Application.UseCases.V1.Countries.Get.IUseCase>((handler, request, cancellationToken) => handler.Execute(request, cancellationToken));
 
-            builder.On<Challenge.Application.UseCases.V1.Countries.Find.InputData>().PipelineAsync()
-                .Call<Challenge.Application.UseCases.V1.Countries.Find.IUseCase>((handler, request) => handler.Execute(request));
+            builder.On<Application.UseCases.V1.Countries.Find.InputData>().PipelineAsync()
+                .Call<Application.UseCases.V1.Countries.Find.IUseCase>((handler, request) => handler.Execute(request));
         }
     }
 }

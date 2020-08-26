@@ -1,13 +1,20 @@
-﻿namespace Challenge.CountryServiceProxy.Entities
+﻿using Challenge.Domain.Interfaces;
+
+namespace Challenge.CountryServiceProxy.Entities
 {
     public sealed class EconomicBloc :
-        Domain.Entities.EconomicBloc
+        IEconomicBloc
     {
         public EconomicBloc(
-            string acronym, 
-            string name) : 
-            base(acronym, name)
+            string acronym,
+            string name)
         {
+            this.Acronym = acronym;
+            this.Name = name;
         }
+
+        public string Acronym { get; private set; }
+
+        public string Name { get; private set; }
     }
 }

@@ -3,7 +3,7 @@
 namespace Challenge.Application.UseCases.V1.Countries.Get
 {
     public interface IUseCase :
-        IUseCase<InputData>
+        IUseCaseCancellable<InputData>
     {
     }
 }

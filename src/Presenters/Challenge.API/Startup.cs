@@ -25,6 +25,7 @@ namespace Challenge.API
             services.AddV1Mediators();
             services.AddV1UseCases();
             services.AddSwagger();
+            services.AddCorsPolicies();
             services.AddRestCountriesAPIServices(Configuration);
         }
 

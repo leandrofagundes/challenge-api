@@ -5,11 +5,11 @@ namespace Challenge.Application.UseCases.V1.Countries.Find
     public sealed class InputData :
         IInputData
     {
-        public string NumericCode { get; }
+        public string Name { get; }
 
-        public InputData(string numericCode)
+        public InputData(string name)
         {
-            this.NumericCode = numericCode;
+            this.Name = name;
         }
     }
 }
