@@ -29,6 +29,35 @@ namespace Challenge.Application.Tests.UseCases.V1.Get
             Assert.NotEmpty(presenter.OutputData.Countries);
         }
 
+        [Fact]
+        public async Task ShouldReturnOnlyOne()
+        {
+            var presenter = new Presenter();
 
+            var useCase = new UseCase(
+                _fixture.CountryServiceFake,
+                presenter);
+
+            var cancellationTokenSource = new CancellationTokenSource();
+            await useCase.Execute(new InputData("Brazil"), cancellationTokenSource.Token);
+
+            Assert.NotEmpty(presenter.OutputData.Countries);
+            Assert.Single(presenter.OutputData.Countries);
+        }
+
+        [Fact]
+        public async Task ShouldReturnEmpty()
+        {
+            var presenter = new Presenter();
+
+            var useCase = new UseCase(
+                _fixture.CountryServiceFake,
+                presenter);
+
+            var cancellationTokenSource = new CancellationTokenSource();
+            await useCase.Execute(new InputData("SAdjlk SAdlkj ASçsad ASDk"), cancellationTokenSource.Token);
+
+            Assert.Empty(presenter.OutputData.Countries);
+        }
     }
 }

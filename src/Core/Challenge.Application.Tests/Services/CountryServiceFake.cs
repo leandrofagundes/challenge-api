@@ -1,6 +1,8 @@
 ﻿using Challenge.Application.Services.Countries;
+using Challenge.CountryServiceProxy.DTOs;
 using Challenge.Domain.Entities;
 using Challenge.Domain.Interfaces;
+using Newtonsoft.Json;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
@@ -14,45 +16,20 @@ namespace Challenge.Application.Tests.Services
         private readonly List<Country> _countries;
         public CountryServiceFake()
         {
-            _countries = new List<Country>
-            {
-                new Country(
-                    "Brazil",
-                    "BRA",
-                    "",
-                    0,
-                    "",
-                    new Currency[]{new Currency("BRL","Brazilian Real","R$")},
-                    new EconomicBloc[]{new EconomicBloc("USAN", "Union of South American Nations") },
-                    new string[]{ },new string[]{ },new string[]{ }),
-                new Country(
-                "Argentina",
-                "ARG",
-                "",
-                0,
-                "",
-                new Currency[] { new Currency("ARG", "Argentinian pesos", "$") },
-                new EconomicBloc[] { new EconomicBloc("USAN", "Union of South American Nations") },
-                    new string[]{ },new string[]{ },new string[]{ }),
-                new Country(
-                    "United States of America",
-                    "USA",
-                    "",
-                    0,
-                    "",
-                    new Currency[] { new Currency("USD", "United States dollar", "$") },
-                    new EconomicBloc[] { new EconomicBloc("NAFTA", "North American Free Trade Agreement") },
-                    new string[]{ },new string[]{ },new string[]{ }),
-                new Country(
-                    "United States of Canada",
-                    "CAN",
-                    "",
-                    0,
-                    "",
-                    new Currency[] { new Currency("USD", "United States dollar", "$") },
-                    new EconomicBloc[] { new EconomicBloc("NAFTA", "North American Free Trade Agreement") },
-                    new string[]{ },new string[]{ },new string[]{ })
-            };
+            var countriesDTO = JsonConvert.DeserializeObject<List<CountryDTO>>(FakeDBConstant.APIJSONResult);
+
+            _countries = countriesDTO.Select(countryDTO => new Country(
+                     countryDTO.Name,
+                      countryDTO.CIOC,
+                      countryDTO.Flag,
+                      countryDTO.Population,
+                      countryDTO.Capital,
+                      countryDTO.Currencies.Select(currencyDTO => new Currency(currencyDTO.Code, currencyDTO.Name, currencyDTO.Symbol)).ToArray(),
+                      countryDTO.RegionalBlocs.Select(regionalBlocDTO => new EconomicBloc(regionalBlocDTO.Acronym, regionalBlocDTO.Name)).ToArray(),
+                      countryDTO.Timezones,
+                      countryDTO.Languages.Select(languateDTO => languateDTO.Name).ToArray(),
+                      countryDTO.Borders
+                     )).ToList();
         }
 
 
@@ -72,7 +49,7 @@ namespace Challenge.Application.Tests.Services
             var filteredCountries = _countries.Where(
                 country => country.Name.ToLower().Contains(normalizedFilter) ||
                 (country.Abbreviation != null && country.Abbreviation.ToLower().Contains(normalizedFilter)) ||
-                country.Currencies.Any(currency => currency.Name.ToLower().Contains(normalizedFilter)))
+                country.Currencies.Any(currency => currency != null && currency.Name != null && currency.Name.ToLower().Contains(normalizedFilter)))
                 .Cast<ICountry>().ToList();
 
             var readonlyList = new ReadOnlyCollection<ICountry>(filteredCountries);

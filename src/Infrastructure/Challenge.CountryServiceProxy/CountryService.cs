@@ -44,7 +44,7 @@ namespace Challenge.CountryServiceProxy
             filteredCountries = filteredCountries.Where(
                 country => country.Name.ToLower().Contains(normalizedFilter) ||
                 (country.Abbreviation != null && country.Abbreviation.ToLower().Contains(normalizedFilter)) ||
-                country.Currencies.Any(currency => currency.Name != null && currency.Name.ToLower().Contains(normalizedFilter))).ToList();
+                country.Currencies.Any(currency => currency.Name != null && currency.Name != null && currency.Name.ToLower().Contains(normalizedFilter))).ToList();
 
             return filteredCountries.ToArray();
         }
