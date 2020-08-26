@@ -50,11 +50,8 @@ namespace Challenge.WebUI.Services
             using var httpResponse = await HttpClient.GetAsync(uriPath, cancellationToken);
             if (httpResponse.IsSuccessStatusCode)
             {
-                Console.WriteLine("Chegou0");
                 var responseDataStringfied = await httpResponse.Content.ReadAsStringAsync();
-                Console.WriteLine("Chegou1");
                 responseObject = DeserializeResponseData<U>(responseDataStringfied);
-                Console.WriteLine("Chegou");
             }
             else
                 await CreateException(httpResponse);

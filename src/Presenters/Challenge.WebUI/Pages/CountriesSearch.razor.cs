@@ -53,7 +53,7 @@ namespace Challenge.WebUI.Pages
 
         protected void NavigateToCountryDetails(string countryName)
         {
-            NavigationManager.NavigateTo($"country-details/{countryName}", true);
+            NavigationManager.NavigateTo($"country-details/{countryName}", false);
         }
     }
 }
