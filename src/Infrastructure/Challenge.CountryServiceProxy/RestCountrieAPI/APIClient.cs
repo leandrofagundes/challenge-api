@@ -5,19 +5,19 @@ using System.Net.Http;
 using System.Text.Json;
 using System.Threading.Tasks;
 
-namespace Challenge.CountryServiceProxy.APIClient
+namespace Challenge.CountryServiceProxy.RestCountrieAPI
 {
-    public sealed class RestCountriesAPIClient
+    public class APIClient
     {
         private readonly JsonSerializerOptions JsonOptions = new JsonSerializerOptions { PropertyNameCaseInsensitive = true, IgnoreNullValues = true };
         private readonly HttpClient _httpClient;
 
-        public RestCountriesAPIClient(HttpClient httpClient)
+        public APIClient(HttpClient httpClient)
         {
             _httpClient = httpClient;
         }
 
-        public async Task<CountryDTO[]> GetAll()
+        public async Task<CountryDTO[]> GetFromRemote()
         {
             CountryDTO[] countries = null;
             HttpResponseMessage response;

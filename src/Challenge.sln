@@ -21,7 +21,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Challenge.CountryServicePro
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Presenters", "1 - Presenters", "{EEC8824D-D928-47E4-9E8D-A02E0B7FECE2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Challenge.API", "Presenters\Challenge.API\Challenge.API.csproj", "{36D4BECB-DA46-484D-AA7F-A2FBD37C0B15}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Challenge.API", "Presenters\Challenge.API\Challenge.API.csproj", "{36D4BECB-DA46-484D-AA7F-A2FBD37C0B15}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

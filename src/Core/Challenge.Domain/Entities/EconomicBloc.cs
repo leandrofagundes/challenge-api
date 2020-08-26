@@ -2,18 +2,19 @@
 
 namespace Challenge.Domain.Entities
 {
-    public abstract class EconomicBloc :
+    public sealed class EconomicBloc :
         IEconomicBloc
     {
-        public string Acronym { get; protected set; }
-        public string Name { get; protected set; }
-
-        protected EconomicBloc(
-            string acronym, 
+        public EconomicBloc(
+            string acronym,
             string name)
         {
             this.Acronym = acronym;
             this.Name = name;
         }
+
+        public string Acronym { get; private set; }
+
+        public string Name { get; private set; }
     }
 }

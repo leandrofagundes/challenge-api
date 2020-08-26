@@ -1,0 +1,35 @@
+﻿@layout MainLayout
+@page "/country-details/{Name}"
+
+<h1>Detalhes do País</h1>
+@if (Country is null)
+{
+    <div class="d-flex justify-content-center">
+        <div class="spinner-border" role="status">
+            <span class="sr-only">Carregando...</span>
+        </div>
+    </div>
+}
+else
+{
+    <div class="card mb-3">
+        <div class="card-header">
+            <img src="@Country.Flag" width="36" height="36" /> @Country.Name
+        </div>
+        <div class="card-body">
+            <b>Nome:</b> @Country.Name <br />
+            <b>Sigle:</b> @Country.Abbreviation<br />
+            <b>Moedas:</b> @Country.Currencies<br />
+            <b>Blocos Econômicos:</b> @Country.EconomicBlocs<br />
+            <b>População:</b> @Country.Population<br />
+            <b>Timezone:</b> @Country.Timezone<br />
+            <b>Línguas:</b> @Country.Languages<br />
+            <b>Capital:</b> @Country.Capital<br />
+            <b>Fronteiras:</b> @Country.Borders<br />
+        </div>
+        <div class="card-footer">
+            <button @onclick="()=>GoBack()" class="btn btn-primary">Voltar para lista</button>
+        </div>
+    </div>
+}
+

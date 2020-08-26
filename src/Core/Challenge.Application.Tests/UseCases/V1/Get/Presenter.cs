@@ -7,6 +7,11 @@ namespace Challenge.Application.Tests.UseCases.V1.Get
     {
         public OutputData OutputData { get; private set; }
 
+        public void Cancelled()
+        {
+            this.OutputData = null;
+        }
+
         public void ExternalServiceError()
         {
             this.OutputData = null;

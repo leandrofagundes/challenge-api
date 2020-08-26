@@ -1,6 +1,7 @@
 ﻿using Challenge.Application.Services.Countries;
 using System;
 using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Challenge.Application.UseCases.V1.Countries.Get
@@ -19,24 +20,33 @@ namespace Challenge.Application.UseCases.V1.Countries.Get
             _outputPort = outputPort;
         }
 
-        public async Task Execute(InputData inputData)
+        public async Task Execute(InputData inputData, CancellationToken cancellationToken)
         {
             try
             {
-                var countries = await _countriesService.GetAll();
+                cancellationToken.ThrowIfCancellationRequested();
+
+                var countries = await _countriesService.GetAll(inputData.Filter);
+
+                cancellationToken.ThrowIfCancellationRequested();
 
                 var outputDataCountries = countries.Select(country => new OutputDataCountryItem(
                     country.Name,
                     country.Abbreviation,
+                    country.Flag,
                     country.Currencies.Select(currency => new OutputDataCountryCurrencyItem(currency.Name)).ToArray(),
-                    country.EconomicGroups.Select(regionalBloc => new OutputDataCountryRegionalBlocItem(regionalBloc.Name)).ToArray()
-                    ));
+                    country.EconomicGroups.Select(regionalBloc => new OutputDataCountryEconomicBlocItem(regionalBloc.Acronym, regionalBloc.Name)).ToArray()
+                    )).ToList();
 
                 var outputData = new OutputData(outputDataCountries);
 
-                _outputPort.Success(outputData);
+                cancellationToken.ThrowIfCancellationRequested();
 
-                await Task.CompletedTask;
+                _outputPort.Success(outputData);
+            }
+            catch (OperationCanceledException)
+            {
+                _outputPort.Cancelled();
             }
             catch (InvalidOperationException)
             {

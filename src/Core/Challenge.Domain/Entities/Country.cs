@@ -2,31 +2,47 @@
 
 namespace Challenge.Domain.Entities
 {
-    public abstract class Country :
-        ICountry
+    public sealed class Country
+         : ICountry
     {
-        public string NumericCode { get; set; }
-        public string Name { get; protected set; }
-        public string Abbreviation { get; protected set; }
-        public string Flag { get; protected set; }
-        public ICurrency[] Currencies { get; protected set; }
-        public IEconomicBloc[] EconomicGroups { get; protected set; }
+        public string Name { get; private set; }
+        public string Abbreviation { get; private set; }
+        public string Flag { get; private set; }
+        public ICurrency[] Currencies { get; private set; }
+        public IEconomicBloc[] EconomicGroups { get; private set; }
 
+        public long Population { get; private set; }
 
-        protected Country(
-            string numericCode,
+        public string[] Timezones { get; private set; }
+
+        public string[] Languages { get; private set; }
+
+        public string[] Borders { get; private set; }
+
+        public string Capital { get; private set; }
+
+        public Country(
             string name,
             string abbreviation,
             string flag,
+            long population,
+            string capital,
             ICurrency[] currencies,
-            IEconomicBloc[] economicBlocs)
+            IEconomicBloc[] economicBlocs,
+            string[] timezones,
+            string[] languages,
+            string[] borders)
         {
-            this.NumericCode = numericCode;
             this.Name = name;
             this.Abbreviation = abbreviation;
             this.Flag = flag;
+            this.Capital = capital;
             this.Currencies = currencies;
             this.EconomicGroups = economicBlocs;
+            this.Population = population;
+            this.Languages = languages;
+            this.Timezones = timezones;
+            this.Borders = borders;
         }
     }
 }

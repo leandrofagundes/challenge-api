@@ -6,9 +6,9 @@ namespace Challenge.Application.UseCases.V1.Countries.Get
     public sealed class OutputData :
         IOutputData
     {
-        public IEnumerable<OutputDataCountryItem> Countries { get; }
+        public List<OutputDataCountryItem> Countries { get; }
 
-        public OutputData(IEnumerable<OutputDataCountryItem> countries)
+        public OutputData(List<OutputDataCountryItem> countries)
         {
             this.Countries = countries;
         }

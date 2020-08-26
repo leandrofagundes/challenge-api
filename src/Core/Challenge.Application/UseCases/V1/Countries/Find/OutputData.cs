@@ -6,20 +6,38 @@ namespace Challenge.Application.UseCases.V1.Countries.Find
         IOutputData
     {
         public string Name { get; }
-        public string CIOC { get; }
+        public string Abbreviation { get; }
+        public long Population { get; }
+        public string Capital { get; }
+        public string Flag { get; }
         public OutputDataCurrency[] Currencies { get; }
-        public OutputDataRegionalBloc[] RegionalBlocs { get; }
+        public OutputDataEconomicBloc[] EconomicBlocs { get; }
+        public string[] Languages { get; }
+        public string[] Timezones { get; }
+        public string[] Borders { get; }
 
         public OutputData(
             string name,
-            string cioc,
+            string abbreviation,
+            string flag,
+            long population,
+            string capital,
             OutputDataCurrency[] currencies,
-            OutputDataRegionalBloc[] regionalBlocs)
+            OutputDataEconomicBloc[] economicBlocs,
+            string[] languages,
+            string[] timezones,
+            string[] borders)
         {
             this.Name = name;
-            this.CIOC = cioc;
+            this.Abbreviation = abbreviation;
+            this.Flag = flag;
+            this.Capital = capital;
+            this.Population = population;
             this.Currencies = currencies;
-            this.RegionalBlocs = regionalBlocs;
+            this.EconomicBlocs = economicBlocs;
+            this.Languages = languages;
+            this.Timezones = timezones;
+            this.Borders = borders; 
         }
     }
 }

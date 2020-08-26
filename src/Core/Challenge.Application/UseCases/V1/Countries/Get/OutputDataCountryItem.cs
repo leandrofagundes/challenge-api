@@ -3,20 +3,23 @@
     public sealed class OutputDataCountryItem
     {
         public string Name { get; }
-        public string CIOC { get; }
+        public string Abbreviation { get; }
+        public string Flag { get; }
         public OutputDataCountryCurrencyItem[] Currencies { get; }
-        public OutputDataCountryRegionalBlocItem[] RegionalBlocs { get; }
+        public OutputDataCountryEconomicBlocItem[] EconomicBlocs { get; }
 
         public OutputDataCountryItem(
             string name,
-            string cioc,
+            string abbreviation,
+            string flag,
             OutputDataCountryCurrencyItem[] currencies,
-            OutputDataCountryRegionalBlocItem[] regionalBlocs)
+            OutputDataCountryEconomicBlocItem[] economicBlocs)
         {
             this.Name = name;
-            this.CIOC = cioc;
+            this.Abbreviation = abbreviation;
+            this.Flag = flag;
             this.Currencies = currencies;
-            this.RegionalBlocs = regionalBlocs;
+            this.EconomicBlocs = economicBlocs;
         }
     }
 }

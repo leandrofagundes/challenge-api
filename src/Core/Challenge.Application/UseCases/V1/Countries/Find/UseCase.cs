@@ -24,19 +24,23 @@ namespace Challenge.Application.UseCases.V1.Countries.Find
         {
             try
             {
-                var country = _countriesService.Find(inputData.NumericCode);
+                var country = await _countriesService.FindByName(inputData.Name);
                 if (country is null)
-                    throw new ArgumentOutOfRangeException("NumericCode", inputData.NumericCode, Resources.CountryNumericCodeNotFound);
+                    throw new ArgumentOutOfRangeException("Name", inputData.Name, Resources.CountryNameNotFound);
 
                 var outputData = new OutputData(
                     country.Name,
                     country.Abbreviation,
+                    country.Flag,
+                    country.Population,
+                    country.Capital,
                     country.Currencies.Select(currency => new OutputDataCurrency(currency.Name)).ToArray(),
-                    country.EconomicGroups.Select(regionalBloc => new OutputDataRegionalBloc(regionalBloc.Name)).ToArray());
+                    country.EconomicGroups.Select(economicBloc => new OutputDataEconomicBloc(economicBloc.Acronym, economicBloc.Name)).ToArray(),
+                    country.Languages,
+                    country.Timezones,
+                    country.Borders);
 
                 _outputPort.Success(outputData);
-
-                await Task.CompletedTask;
             }
             catch (ArgumentOutOfRangeException outOfRangeEx)
             {

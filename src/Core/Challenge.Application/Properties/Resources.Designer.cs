@@ -63,9 +63,9 @@ namespace Challenge.Application.Properties {
         /// <summary>
         ///   Looks up a localized string similar to País não encontrado..
         /// </summary>
-        internal static string CountryNumericCodeNotFound {
+        internal static string CountryNameNotFound {
             get {
-                return ResourceManager.GetString("CountryNumericCodeNotFound", resourceCulture);
+                return ResourceManager.GetString("CountryNameNotFound", resourceCulture);
             }
         }
     }
