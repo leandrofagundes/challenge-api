@@ -19,9 +19,10 @@ namespace Challenge.Application.Tests.Services
             var countriesDTO = JsonConvert.DeserializeObject<List<CountryDTO>>(FakeDBConstant.APIJSONResult);
 
             _countries = countriesDTO.Select(countryDTO => new Country(
-                     countryDTO.Name,
+                      countryDTO.Name,
                       countryDTO.CIOC,
                       countryDTO.Flag,
+                      countryDTO.Region,
                       countryDTO.Population,
                       countryDTO.Capital,
                       countryDTO.Currencies.Select(currencyDTO => new Currency(currencyDTO.Code, currencyDTO.Name, currencyDTO.Symbol)).ToArray(),
@@ -37,6 +38,16 @@ namespace Challenge.Application.Tests.Services
         {
             var countryByCode = _countries.FirstOrDefault(country => country.Name == name);
             return Task.FromResult((ICountry)countryByCode);
+        }
+
+        public Task<IReadOnlyCollection<ICountry>> GetByRegion(string regionName)
+        {
+            var region = _countries.Where(
+                country => country.Region.ToLower().Trim().Equals(regionName.ToLower().Trim())
+                ).ToList();
+
+            var readonlyList = new ReadOnlyCollection<Country>(region);
+            return Task.FromResult((IReadOnlyCollection<ICountry>)readonlyList);
         }
 
         Task<IReadOnlyCollection<ICountry>> ICountriesService.GetAll(string filters)

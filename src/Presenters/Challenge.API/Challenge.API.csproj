@@ -30,5 +30,9 @@
     <ProjectReference Include="..\..\Core\Challenge.Application\Challenge.Application.csproj" />
     <ProjectReference Include="..\..\Infrastructure\Challenge.CountryServiceProxy\Challenge.CountryServiceProxy.csproj" />
   </ItemGroup>
+  
+  <ItemGroup>
+    <Folder Include="UseCases\V1\Routes\" />
+  </ItemGroup>
 
 </Project>

@@ -5,6 +5,7 @@
         public string Name { get; set; }
         public string CIOC { get; set; }
         public string Flag { get; set; }
+        public string Region { get; set; }
         public CurrencyDTO[] Currencies { get; set; }
         public RegionalBlocDTO[] RegionalBlocs { get; set; }
         public LanguageDTO[] Languages { get; set; }

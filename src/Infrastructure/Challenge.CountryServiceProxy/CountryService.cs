@@ -36,6 +36,12 @@ namespace Challenge.CountryServiceProxy
             return new ReadOnlyCollection<ICountry>(countries);
         }
 
+        public async Task<IReadOnlyCollection<ICountry>> GetByRegion(string regionName)
+        {
+            var region = await _cache.Region(regionName);
+            return new ReadOnlyCollection<ICountry>(region);
+        }
+
         private Country[] FilterCountries(Country[] countries, string filters)
         {
             var normalizedFilter = filters.ToLower().Trim();

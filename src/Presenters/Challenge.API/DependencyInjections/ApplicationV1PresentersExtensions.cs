@@ -6,11 +6,14 @@ namespace Challenge.API.DependencyInjections
     {
         public static IServiceCollection AddV1Presenters(this IServiceCollection services)
         {
-            services.AddScoped<Challenge.API.UseCases.V1.Countries.Find.Presenter, Challenge.API.UseCases.V1.Countries.Find.Presenter>();
-            services.AddScoped<Challenge.Application.UseCases.V1.Countries.Find.IOutputPort>(x => x.GetRequiredService<UseCases.V1.Countries.Find.Presenter>());
+            services.AddScoped<UseCases.V1.Countries.Find.Presenter, UseCases.V1.Countries.Find.Presenter>();
+            services.AddScoped<Application.UseCases.V1.Countries.Find.IOutputPort>(x => x.GetRequiredService<UseCases.V1.Countries.Find.Presenter>());
 
-            services.AddScoped<Challenge.API.UseCases.V1.Countries.Get.Presenter, Challenge.API.UseCases.V1.Countries.Get.Presenter>();
-            services.AddScoped<Challenge.Application.UseCases.V1.Countries.Get.IOutputPort>(x => x.GetRequiredService<UseCases.V1.Countries.Get.Presenter>());
+            services.AddScoped<UseCases.V1.Countries.Get.Presenter, UseCases.V1.Countries.Get.Presenter>();
+            services.AddScoped<Application.UseCases.V1.Countries.Get.IOutputPort>(x => x.GetRequiredService<UseCases.V1.Countries.Get.Presenter>());
+
+            services.AddScoped<UseCases.V1.Countries.GetByRegion.Presenter, UseCases.V1.Countries.GetByRegion.Presenter>();
+            services.AddScoped<Application.UseCases.V1.Countries.GetByRegion.IOutputPort>(x => x.GetRequiredService<UseCases.V1.Countries.GetByRegion.Presenter>());
 
             return services;
         }

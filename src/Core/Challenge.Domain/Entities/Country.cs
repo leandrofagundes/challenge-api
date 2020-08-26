@@ -8,6 +8,7 @@ namespace Challenge.Domain.Entities
         public string Name { get; private set; }
         public string Abbreviation { get; private set; }
         public string Flag { get; private set; }
+        public string Region { get; private set; }
         public ICurrency[] Currencies { get; private set; }
         public IEconomicBloc[] EconomicGroups { get; private set; }
 
@@ -25,6 +26,7 @@ namespace Challenge.Domain.Entities
             string name,
             string abbreviation,
             string flag,
+            string region,
             long population,
             string capital,
             ICurrency[] currencies,
@@ -36,6 +38,7 @@ namespace Challenge.Domain.Entities
             this.Name = name;
             this.Abbreviation = abbreviation;
             this.Flag = flag;
+            this.Region = region;
             this.Capital = capital;
             this.Currencies = currencies;
             this.EconomicGroups = economicBlocs;
