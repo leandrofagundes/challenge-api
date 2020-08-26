@@ -1,7 +1,6 @@
 ﻿using Challenge.Application.Services.Countries;
-using Challenge.CountryServiceProxy.APIClient;
 using Challenge.CountryServiceProxy.CacheDb;
-using Challenge.CountryServiceProxy.Entities;
+using Challenge.Domain.Entities;
 using Challenge.Domain.Interfaces;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -13,36 +12,31 @@ namespace Challenge.CountryServiceProxy
     public sealed class CountryService :
         ICountriesService
     {
-        private readonly InMemoryCacheDb _inMemoryCacheDb;
-        private readonly RestCountriesAPIClient _restCountriesAPIClient;
+        private readonly DbCache _cache;
 
         public CountryService(
-            InMemoryCacheDb inMemoryCacheDb,
-            RestCountriesAPIClient restCountriesAPIClient)
+            DbCache cache)
         {
-            _inMemoryCacheDb = inMemoryCacheDb;
-            _restCountriesAPIClient = restCountriesAPIClient;
+            _cache = cache;
         }
 
-        public ICountry Find(string name)
+        public async Task<ICountry> FindByName(string name)
         {
-            return _inMemoryCacheDb.Find(name);
+            var countries = await _cache.All();
+            return countries.FirstOrDefault(country => country.Name.ToLower().Trim().Equals(name?.ToLower().Trim()));
         }
 
-        public async Task<IEnumerable<ICountry>> GetAll(string filters)
+        public async Task<IReadOnlyCollection<ICountry>> GetAll(string filters)
         {
-            if (_inMemoryCacheDb.IsEmpty())
-                await ReloadCache();
-
-            var countries = _inMemoryCacheDb.GetAll();
+            var countries = await _cache.All();
 
             if (!string.IsNullOrWhiteSpace(filters))
                 countries = FilterCountries(countries, filters);
 
-            return countries;
+            return new ReadOnlyCollection<ICountry>(countries);
         }
 
-        private IReadOnlyCollection<Country> FilterCountries(IReadOnlyCollection<Country> countries, string filters)
+        private Country[] FilterCountries(Country[] countries, string filters)
         {
             var normalizedFilter = filters.ToLower().Trim();
             var filteredCountries = countries.ToList();
@@ -52,25 +46,7 @@ namespace Challenge.CountryServiceProxy
                 (country.Abbreviation != null && country.Abbreviation.ToLower().Contains(normalizedFilter)) ||
                 country.Currencies.Any(currency => currency.Name != null && currency.Name.ToLower().Contains(normalizedFilter))).ToList();
 
-            return new ReadOnlyCollection<Country>(filteredCountries);
-        }
-
-        private async Task ReloadCache()
-        {
-            var countriesDTO = await _restCountriesAPIClient.GetAll();
-            var countries = countriesDTO.Select(country => new Country(
-                country.Name,
-                country.CIOC,
-                country.Flag,
-                country.Population,
-                country.Capital,
-                country.Currencies.Select(currency => new Currency(currency.Code, currency.Name, currency.Symbol)).ToArray(),
-                country.RegionalBlocs.Select(regionalBloc => new EconomicBloc(regionalBloc.Acronym, regionalBloc.Name)).ToArray(),
-                country.Timezones,
-                country.Languages.Select(language => language.Name).ToArray(),
-                country.Borders));
-
-            _inMemoryCacheDb.Add(countries);
+            return filteredCountries.ToArray();
         }
     }
 }

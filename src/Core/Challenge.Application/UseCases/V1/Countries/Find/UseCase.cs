@@ -24,7 +24,7 @@ namespace Challenge.Application.UseCases.V1.Countries.Find
         {
             try
             {
-                var country = _countriesService.Find(inputData.Name);
+                var country = await _countriesService.FindByName(inputData.Name);
                 if (country is null)
                     throw new ArgumentOutOfRangeException("Name", inputData.Name, Resources.CountryNameNotFound);
 
@@ -41,8 +41,6 @@ namespace Challenge.Application.UseCases.V1.Countries.Find
                     country.Borders);
 
                 _outputPort.Success(outputData);
-
-                await Task.CompletedTask;
             }
             catch (ArgumentOutOfRangeException outOfRangeEx)
             {

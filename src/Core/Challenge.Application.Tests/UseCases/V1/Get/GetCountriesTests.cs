@@ -29,19 +29,6 @@ namespace Challenge.Application.Tests.UseCases.V1.Get
             Assert.NotEmpty(presenter.OutputData.Countries);
         }
 
-        [Fact]
-        public async Task GetAllFromApi_ShouldSuccess()
-        {
-            var presenter = new Presenter();
 
-            var useCase = new UseCase(
-                _fixture.CountryServiceAPI,
-                presenter);
-
-            var cancellationTokenSource = new CancellationTokenSource();
-            await useCase.Execute(new InputData(string.Empty), cancellationTokenSource.Token);
-
-            Assert.NotEmpty(presenter.OutputData.Countries);
-        }
     }
 }

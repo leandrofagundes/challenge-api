@@ -6,7 +6,7 @@ namespace Challenge.Application.Services.Countries
 {
     public interface ICountriesService
     {
-        Task<IEnumerable<ICountry>> GetAll(string filter);
-        ICountry Find(string numericCode);
+        Task<IReadOnlyCollection<ICountry>> GetAll(string filters);
+        Task<ICountry> FindByName(string name);
     }
 }

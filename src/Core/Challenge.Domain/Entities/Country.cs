@@ -1,6 +1,6 @@
 ﻿using Challenge.Domain.Interfaces;
 
-namespace Challenge.CountryServiceProxy.Entities
+namespace Challenge.Domain.Entities
 {
     public sealed class Country
          : ICountry

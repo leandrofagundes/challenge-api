@@ -20,6 +20,7 @@ namespace Challenge.API
         public void ConfigureDevelopmentServices(IServiceCollection services)
         {
             services.AddControllersCustomizations();
+            services.AddMemoryCache();
             services.AddApiVersioningCustoms();
             services.AddV1Presenters();
             services.AddV1Mediators();
@@ -27,6 +28,7 @@ namespace Challenge.API
             services.AddSwagger();
             services.AddCorsPolicies();
             services.AddRestCountriesAPIServices(Configuration);
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
