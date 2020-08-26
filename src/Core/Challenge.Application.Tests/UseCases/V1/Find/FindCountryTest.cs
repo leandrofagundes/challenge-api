@@ -15,8 +15,8 @@ namespace Challenge.Application.Tests.UseCases.V1.Find
         }
 
         [Theory]
-        [InlineData("079")]
-        public async Task ShouldSuccess(string numericCode)
+        [InlineData("Brazil")]
+        public async Task ShouldSuccess(string name)
         {
             var presenter = new Presenter();
 
@@ -24,7 +24,7 @@ namespace Challenge.Application.Tests.UseCases.V1.Find
                 _fixture.CountryServiceFake,
                 presenter);
 
-            await useCase.Execute(new InputData(numericCode));
+            await useCase.Execute(new InputData(name));
 
             Assert.Equal("BRA", presenter.OutputData.CIOC);
         }
