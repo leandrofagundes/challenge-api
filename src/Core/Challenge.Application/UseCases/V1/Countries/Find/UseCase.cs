@@ -40,7 +40,7 @@ namespace Challenge.Application.UseCases.V1.Countries.Find
             }
             catch (ArgumentOutOfRangeException outOfRangeEx)
             {
-                _outputPort.NotFound(outOfRangeEx.Message, outOfRangeEx.ActualValue);
+                _outputPort.NotFound(outOfRangeEx.ActualValue);
             }
 
         }

@@ -5,19 +5,23 @@ VisualStudioVersion = 16.0.30309.148
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Application", "2 - Application", "{63A20774-2140-453B-A2B7-333EB7F83FF1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Challenge.Application", "Core\Challenge.Application\Challenge.Application.csproj", "{2A10FD1F-7C85-4D77-AC90-B2FA0225E806}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Challenge.Application", "Core\Challenge.Application\Challenge.Application.csproj", "{2A10FD1F-7C85-4D77-AC90-B2FA0225E806}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Challenge.Application.Tests", "Core\Challenge.Application.Tests\Challenge.Application.Tests.csproj", "{2E6990A3-31B9-4C97-97F6-A5075214A62B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Challenge.Application.Tests", "Core\Challenge.Application.Tests\Challenge.Application.Tests.csproj", "{2E6990A3-31B9-4C97-97F6-A5075214A62B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Domain", "3 - Domain", "{F3AB8898-9588-439A-A35C-E1D335CD0750}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Challenge.Domain", "Core\Challenge.Domain\Challenge.Domain.csproj", "{ACEECF28-7A89-44E1-80B9-8EB2DA3B1F1A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Challenge.Domain", "Core\Challenge.Domain\Challenge.Domain.csproj", "{ACEECF28-7A89-44E1-80B9-8EB2DA3B1F1A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Infrastructure", "4 - Infrastructure", "{D8CF190D-E794-40D5-A895-8C455F4D41AB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ExternalServices", "ExternalServices", "{356E9DB2-E061-4EA5-86BD-EA579A6D6841}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Challenge.CountryServiceProxy", "Infrastructure\Challenge.CountryServiceProxy\Challenge.CountryServiceProxy.csproj", "{F9ACE591-4F2D-4688-A41B-2899BFDB0233}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Challenge.CountryServiceProxy", "Infrastructure\Challenge.CountryServiceProxy\Challenge.CountryServiceProxy.csproj", "{F9ACE591-4F2D-4688-A41B-2899BFDB0233}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Presenters", "1 - Presenters", "{EEC8824D-D928-47E4-9E8D-A02E0B7FECE2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Challenge.API", "Presenters\Challenge.API\Challenge.API.csproj", "{36D4BECB-DA46-484D-AA7F-A2FBD37C0B15}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -77,6 +81,18 @@ Global
 		{F9ACE591-4F2D-4688-A41B-2899BFDB0233}.Release|x64.Build.0 = Release|Any CPU
 		{F9ACE591-4F2D-4688-A41B-2899BFDB0233}.Release|x86.ActiveCfg = Release|Any CPU
 		{F9ACE591-4F2D-4688-A41B-2899BFDB0233}.Release|x86.Build.0 = Release|Any CPU
+		{36D4BECB-DA46-484D-AA7F-A2FBD37C0B15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36D4BECB-DA46-484D-AA7F-A2FBD37C0B15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36D4BECB-DA46-484D-AA7F-A2FBD37C0B15}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{36D4BECB-DA46-484D-AA7F-A2FBD37C0B15}.Debug|x64.Build.0 = Debug|Any CPU
+		{36D4BECB-DA46-484D-AA7F-A2FBD37C0B15}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{36D4BECB-DA46-484D-AA7F-A2FBD37C0B15}.Debug|x86.Build.0 = Debug|Any CPU
+		{36D4BECB-DA46-484D-AA7F-A2FBD37C0B15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36D4BECB-DA46-484D-AA7F-A2FBD37C0B15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36D4BECB-DA46-484D-AA7F-A2FBD37C0B15}.Release|x64.ActiveCfg = Release|Any CPU
+		{36D4BECB-DA46-484D-AA7F-A2FBD37C0B15}.Release|x64.Build.0 = Release|Any CPU
+		{36D4BECB-DA46-484D-AA7F-A2FBD37C0B15}.Release|x86.ActiveCfg = Release|Any CPU
+		{36D4BECB-DA46-484D-AA7F-A2FBD37C0B15}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -87,6 +103,7 @@ Global
 		{ACEECF28-7A89-44E1-80B9-8EB2DA3B1F1A} = {F3AB8898-9588-439A-A35C-E1D335CD0750}
 		{356E9DB2-E061-4EA5-86BD-EA579A6D6841} = {D8CF190D-E794-40D5-A895-8C455F4D41AB}
 		{F9ACE591-4F2D-4688-A41B-2899BFDB0233} = {356E9DB2-E061-4EA5-86BD-EA579A6D6841}
+		{36D4BECB-DA46-484D-AA7F-A2FBD37C0B15} = {EEC8824D-D928-47E4-9E8D-A02E0B7FECE2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {63B7AE11-0668-4D37-B89B-62B0504166BA}

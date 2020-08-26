@@ -1,4 +1,5 @@
 ﻿using Challenge.Application.Services.Countries;
+using System;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -20,20 +21,27 @@ namespace Challenge.Application.UseCases.V1.Countries.Get
 
         public async Task Execute(InputData inputData)
         {
-            var countries = await _countriesService.GetAll();
+            try
+            {
+                var countries = await _countriesService.GetAll();
 
-            var outputDataCountries = countries.Select(country => new OutputDataCountryItem(
-                country.Name,
-                country.Abbreviation,
-                country.Currencies.Select(currency => new OutputDataCountryCurrencyItem(currency.Name)).ToArray(),
-                country.EconomicGroups.Select(regionalBloc => new OutputDataCountryRegionalBlocItem(regionalBloc.Name)).ToArray()
-                ));
+                var outputDataCountries = countries.Select(country => new OutputDataCountryItem(
+                    country.Name,
+                    country.Abbreviation,
+                    country.Currencies.Select(currency => new OutputDataCountryCurrencyItem(currency.Name)).ToArray(),
+                    country.EconomicGroups.Select(regionalBloc => new OutputDataCountryRegionalBlocItem(regionalBloc.Name)).ToArray()
+                    ));
 
-            var outputData = new OutputData(outputDataCountries);
+                var outputData = new OutputData(outputDataCountries);
 
-            _outputPort.Success(outputData);
+                _outputPort.Success(outputData);
 
-            await Task.CompletedTask;
+                await Task.CompletedTask;
+            }
+            catch (InvalidOperationException)
+            {
+                _outputPort.ExternalServiceError();
+            }
         }
     }
 }

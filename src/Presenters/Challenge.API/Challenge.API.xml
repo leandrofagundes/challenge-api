@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Challenge.API</name>
+    </assembly>
+    <members>
+        <member name="T:Challenge.API.DependencyInjections.ApplicationV1MediatorExtensions">
+            <summary>
+            Mediator which allows us to keep the clean architecture, not being injected on our application layer.
+            Check the github if you need help: https://github.com/ivanpaulovich/FluentMediator
+            </summary>
+        </member>
+        <member name="M:Challenge.API.DependencyInjections.SwaggerExtensions.UseVersionedSwagger(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Mvc.ApiExplorer.IApiVersionDescriptionProvider)">
+            <summary>
+            Prepara o Swagger e o SwaggerUI (interface do Swagger).
+            </summary>
+        </member>
+        <member name="M:Challenge.API.UseCases.V1.Countries.Find.CountriesController.Find(System.String)">
+            <summary>
+            Busca os detalhes de um País.
+            </summary>
+            <param name="name">Nome do País</param>
+            <returns>O retorno <see cref="F:Microsoft.AspNetCore.Http.StatusCodes.Status200OK"/> juntamente com o registro obtido.</returns>
+            <response code="200">Registro foi encontrado corretamente e será retornado.</response>
+            <response code="404">Não foi encontrado nenhum conteúdo para o país informado.</response>
+            <response code="500">Ocorreu um erro no servidor.</response>
+        </member>
+        <member name="M:Challenge.API.UseCases.V1.Countries.Get.CountriesController.Get(System.String)">
+            <summary>
+            Busca uma lista de países baseado no filtro informado.
+            </summary>
+            <param name="filter">Filtro que pode ser utilizado para pesquisa com base no nome do país, sigla ou moeda.</param>
+            <returns>O retorno <see cref="F:Microsoft.AspNetCore.Http.StatusCodes.Status200OK"/> contendo a lista de países encontrados. Essa lista pode ser vazia.</returns>
+            <response code="500">Ocorreu um erro no servidor.</response>
+        </member>
+    </members>
+</doc>

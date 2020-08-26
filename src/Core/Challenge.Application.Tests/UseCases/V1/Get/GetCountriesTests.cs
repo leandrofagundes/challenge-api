@@ -22,23 +22,23 @@ namespace Challenge.Application.Tests.UseCases.V1.Get
                 _fixture.CountryServiceFake,
                 presenter);
 
-            await useCase.Execute(new InputData());
+            await useCase.Execute(new InputData(string.Empty));
 
             Assert.NotEmpty(presenter.OutputData.Countries);
         }
 
-        [Fact]
-        public async Task GetAllFromApi_ShouldSuccess()
-        {
-            var presenter = new Presenter();
+        ////[Fact]
+        ////public async Task GetAllFromApi_ShouldSuccess()
+        ////{
+        ////    var presenter = new Presenter();
 
-            var useCase = new UseCase(
-                _fixture.CountryServiceAPI,
-                presenter);
+        ////    var useCase = new UseCase(
+        ////        _fixture.CountryServiceAPI,
+        ////        presenter);
 
-            await useCase.Execute(new InputData());
+        ////    await useCase.Execute(new InputData(string.Empty));
 
-            Assert.NotEmpty(presenter.OutputData.Countries);
-        }
+        ////    Assert.NotEmpty(presenter.OutputData.Countries);
+        ////}
     }
 }

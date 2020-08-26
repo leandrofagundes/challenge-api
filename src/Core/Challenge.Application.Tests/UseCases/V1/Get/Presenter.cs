@@ -6,7 +6,12 @@ namespace Challenge.Application.Tests.UseCases.V1.Get
         IOutputPort
     {
         public OutputData OutputData { get; private set; }
-        
+
+        public void ExternalServiceError()
+        {
+            this.OutputData = null;
+        }
+
         public void Success(OutputData outputData)
         {
             this.OutputData = outputData;

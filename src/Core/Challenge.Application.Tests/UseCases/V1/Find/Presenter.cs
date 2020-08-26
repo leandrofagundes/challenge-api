@@ -8,9 +8,9 @@ namespace Challenge.Application.Tests.UseCases.V1.Find
     {
         public OutputData OutputData { get; private set; }
 
-        public void NotFound(string message, object value)
+        public void NotFound(object value)
         {
-            throw new ArgumentOutOfRangeException("", value, message);
+            throw new ArgumentOutOfRangeException("", value, "");
         }
 
         public void Success(OutputData outputData)
