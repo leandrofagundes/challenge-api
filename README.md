@@ -15,10 +15,12 @@ Os testes podem ser executados diretamente do Visual Studio na Solution \src\Cha
 
 Gostaria de desenvolver várias pequenas melhorias ainda como:
  - Criação de mais testes;
- - Criação dos value objects para os tipos;
+ - Criação dos value objects para os tipos de dados com validações;
+ - Criação dos testes unitários dos value objects;
  - Mais validações de integridade de dados recebidos (inputdatas);
  - Algumas interfaces para ResponseData e RequestData;
  - Inserir o Docker ou remover ele da aplicação API pois não está em uso;
  - Retorno de mensagens mais amigáveis no Blazor;
  - Fazer a busca funcionar por nome dos países em Português (ou localizado conforme ferramenta/api);
+ - Meu outro repositório (show-me-the-code) apresenta a utilização com um microserviço básico + docker;
  
