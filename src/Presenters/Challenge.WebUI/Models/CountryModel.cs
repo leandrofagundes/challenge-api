@@ -16,7 +16,21 @@ namespace Challenge.WebUI.Models
 
         public async Task<CountryDetailResponseData> GetDetails(string countryName)
         {
-            var responseData = await _webHttpClient.FindAsync<CountryDetailResponseData>($"v1/countries/{countryName}");
+            var responseData = await _webHttpClient.GetAsync<CountryDetailResponseData>($"v1/countries/{countryName}");
+            return responseData;
+        }
+
+        public async Task<CountryDetailsRegionResponseData[]> GetInRegion(string regionName)
+        {
+            var responseData = await _webHttpClient.GetAsync<CountryDetailsRegionResponseData[]>(
+                $"v1/countries/region/{regionName}");
+            return responseData;
+        }
+
+        public async Task<RouteResponseData[]> GetRoute(string origin, string destiny)
+        {
+            var responseData = await _webHttpClient.GetAsync<RouteResponseData[]>(
+                $"v1/countries/route/{origin}/{destiny}");
             return responseData;
         }
 

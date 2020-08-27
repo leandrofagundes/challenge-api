@@ -34,6 +34,7 @@ namespace Challenge.Application.UseCases.V1.Countries.Find
                     country.Flag,
                     country.Population,
                     country.Capital,
+                    country.Region,
                     country.Currencies.Select(currency => new OutputDataCurrency(currency.Name)).ToArray(),
                     country.EconomicGroups.Select(economicBloc => new OutputDataEconomicBloc(economicBloc.Acronym, economicBloc.Name)).ToArray(),
                     country.Languages,

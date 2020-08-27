@@ -1,7 +1,6 @@
 ﻿using Challenge.Application.Services.Countries;
 using System;
 using System.Linq;
-using System.Threading;
 using System.Threading.Tasks;
 
 namespace Challenge.Application.UseCases.V1.Countries.GetByRegion
@@ -20,15 +19,11 @@ namespace Challenge.Application.UseCases.V1.Countries.GetByRegion
             _outputPort = outputPort;
         }
 
-        public async Task Execute(InputData inputData, CancellationToken cancellationToken)
+        public async Task Execute(InputData inputData)
         {
             try
             {
-                cancellationToken.ThrowIfCancellationRequested();
-
                 var countries = await _countriesService.GetByRegion(inputData.RegionName);
-
-                cancellationToken.ThrowIfCancellationRequested();
 
                 var outputDataCountries = countries.Select(country => new OutputDataCountryItem(
                     country.Name,
@@ -38,13 +33,7 @@ namespace Challenge.Application.UseCases.V1.Countries.GetByRegion
 
                 var outputData = new OutputData(outputDataCountries);
 
-                cancellationToken.ThrowIfCancellationRequested();
-
                 _outputPort.Success(outputData);
-            }
-            catch (OperationCanceledException)
-            {
-                _outputPort.Cancelled();
             }
             catch (InvalidOperationException)
             {

@@ -44,7 +44,7 @@
             ]
          }
       ],
-      ""cioc"":""AFG"",
+      ""alpha3Code"":""AFG"",
       ""name"":""Afghanistan"",
       ""capital"":""Kabul"",
       ""region"":""Asia"",
@@ -90,7 +90,7 @@
             ]
          }
       ],
-      ""cioc"":"""",
+      ""alpha3Code"":"""",
       ""name"":""Åland Islands"",
       ""capital"":""Mariehamn"",
       ""region"":""Europe"",
@@ -131,7 +131,7 @@
             ]
          }
       ],
-      ""cioc"":""ALB"",
+      ""alpha3Code"":""ALB"",
       ""name"":""Albania"",
       ""capital"":""Tirana"",
       ""region"":""Europe"",
@@ -191,7 +191,7 @@
             ]
          }
       ],
-      ""cioc"":""ALG"",
+      ""alpha3Code"":""ALG"",
       ""name"":""Algeria"",
       ""capital"":""Algiers"",
       ""region"":""Africa"",
@@ -235,7 +235,7 @@
       ""regionalBlocs"":[
          
       ],
-      ""cioc"":""ASA"",
+      ""alpha3Code"":""ASA"",
       ""name"":""American Samoa"",
       ""capital"":""Pago Pago"",
       ""region"":""Oceania"",
@@ -267,7 +267,7 @@
       ""regionalBlocs"":[
          
       ],
-      ""cioc"":""AND"",
+      ""alpha3Code"":""AND"",
       ""name"":""Andorra"",
       ""capital"":""Andorra la Vella"",
       ""region"":""Europe"",
@@ -313,7 +313,7 @@
             ]
          }
       ],
-      ""cioc"":""ANG"",
+      ""alpha3Code"":""ANG"",
       ""name"":""Angola"",
       ""capital"":""Luanda"",
       ""region"":""Africa"",
@@ -348,7 +348,7 @@
       ""regionalBlocs"":[
          
       ],
-      ""cioc"":"""",
+      ""alpha3Code"":"""",
       ""name"":""Anguilla"",
       ""capital"":""The Valley"",
       ""region"":""Americas"",
@@ -391,7 +391,7 @@
       ""regionalBlocs"":[
          
       ],
-      ""cioc"":"""",
+      ""alpha3Code"":"""",
       ""name"":""Antarctica"",
       ""capital"":"""",
       ""region"":""Polar"",
@@ -441,7 +441,7 @@
             ]
          }
       ],
-      ""cioc"":""ANT"",
+      ""alpha3Code"":""ANT"",
       ""name"":""Antigua and Barbuda"",
       ""capital"":""Saint John's"",
       ""region"":""Americas"",
@@ -493,7 +493,7 @@
             ]
          }
       ],
-      ""cioc"":""ARG"",
+      ""alpha3Code"":""ARG"",
       ""name"":""Argentina"",
       ""capital"":""Buenos Aires"",
       ""region"":""Americas"",
@@ -543,7 +543,7 @@
             ]
          }
       ],
-      ""cioc"":""ARM"",
+      ""alpha3Code"":""ARM"",
       ""name"":""Armenia"",
       ""capital"":""Yerevan"",
       ""region"":""Asia"",
@@ -584,7 +584,7 @@
       ""regionalBlocs"":[
          
       ],
-      ""cioc"":""ARU"",
+      ""alpha3Code"":""ARU"",
       ""name"":""Aruba"",
       ""capital"":""Oranjestad"",
       ""region"":""Americas"",
@@ -616,7 +616,7 @@
       ""regionalBlocs"":[
          
       ],
-      ""cioc"":""AUS"",
+      ""alpha3Code"":""AUS"",
       ""name"":""Australia"",
       ""capital"":""Canberra"",
       ""region"":""Oceania"",
@@ -664,7 +664,7 @@
             ]
          }
       ],
-      ""cioc"":""AUT"",
+      ""alpha3Code"":""AUT"",
       ""name"":""Austria"",
       ""capital"":""Vienna"",
       ""region"":""Europe"",
@@ -702,7 +702,7 @@
       ""regionalBlocs"":[
          
       ],
-      ""cioc"":""AZE"",
+      ""alpha3Code"":""AZE"",
       ""name"":""Azerbaijan"",
       ""capital"":""Baku"",
       ""region"":""Asia"",
@@ -749,7 +749,7 @@
             ]
          }
       ],
-      ""cioc"":""BAH"",
+      ""alpha3Code"":""BAH"",
       ""name"":""Bahamas"",
       ""capital"":""Nassau"",
       ""region"":""Americas"",
@@ -792,7 +792,7 @@
             ]
          }
       ],
-      ""cioc"":""BRN"",
+      ""alpha3Code"":""BRN"",
       ""name"":""Bahrain"",
       ""capital"":""Manama"",
       ""region"":""Asia"",
@@ -833,7 +833,7 @@
             ]
          }
       ],
-      ""cioc"":""BAN"",
+      ""alpha3Code"":""BAN"",
       ""name"":""Bangladesh"",
       ""capital"":""Dhaka"",
       ""region"":""Asia"",
@@ -877,7 +877,7 @@
             ]
          }
       ],
-      ""cioc"":""BAR"",
+      ""alpha3Code"":""BAR"",
       ""name"":""Barbados"",
       ""capital"":""Bridgetown"",
       ""region"":""Americas"",
@@ -929,7 +929,7 @@
             ]
          }
       ],
-      ""cioc"":""BLR"",
+      ""alpha3Code"":""BLR"",
       ""name"":""Belarus"",
       ""capital"":""Minsk"",
       ""region"":""Europe"",
@@ -986,7 +986,7 @@
             ]
          }
       ],
-      ""cioc"":""BEL"",
+      ""alpha3Code"":""BEL"",
       ""name"":""Belgium"",
       ""capital"":""Brussels"",
       ""region"":""Europe"",
@@ -1048,7 +1048,7 @@
             ]
          }
       ],
-      ""cioc"":""BIZ"",
+      ""alpha3Code"":""BIZ"",
       ""name"":""Belize"",
       ""capital"":""Belmopan"",
       ""region"":""Americas"",
@@ -1094,7 +1094,7 @@
             ]
          }
       ],
-      ""cioc"":""BEN"",
+      ""alpha3Code"":""BEN"",
       ""name"":""Benin"",
       ""capital"":""Porto-Novo"",
       ""region"":""Africa"",
@@ -1129,7 +1129,7 @@
       ""regionalBlocs"":[
          
       ],
-      ""cioc"":""BER"",
+      ""alpha3Code"":""BER"",
       ""name"":""Bermuda"",
       ""capital"":""Hamilton"",
       ""region"":""Americas"",
@@ -1175,7 +1175,7 @@
             ]
          }
       ],
-      ""cioc"":""BHU"",
+      ""alpha3Code"":""BHU"",
       ""name"":""Bhutan"",
       ""capital"":""Thimphu"",
       ""region"":""Asia"",
@@ -1234,7 +1234,7 @@
             ]
          }
       ],
-      ""cioc"":""BOL"",
+      ""alpha3Code"":""BOL"",
       ""name"":""Bolivia (Plurinational State of)"",
       ""capital"":""Sucre"",
       ""region"":""Americas"",
@@ -1321,7 +1321,7 @@
             ]
          }
       ],
-      ""cioc"":""BIH"",
+      ""alpha3Code"":""BIH"",
       ""name"":""Bosnia and Herzegovina"",
       ""capital"":""Sarajevo"",
       ""region"":""Europe"",
@@ -1374,7 +1374,7 @@
             ]
          }
       ],
-      ""cioc"":""BOT"",
+      ""alpha3Code"":""BOT"",
       ""name"":""Botswana"",
       ""capital"":""Gaborone"",
       ""region"":""Africa"",
@@ -1421,7 +1421,7 @@
       ""regionalBlocs"":[
          
       ],
-      ""cioc"":"""",
+      ""alpha3Code"":"""",
       ""name"":""Bouvet Island"",
       ""capital"":"""",
       ""region"":"""",
@@ -1467,7 +1467,7 @@
             ]
          }
       ],
-      ""cioc"":""BRA"",
+      ""alpha3Code"":""BRA"",
       ""name"":""Brazil"",
       ""capital"":""Brasília"",
       ""region"":""Americas"",
@@ -1524,7 +1524,7 @@
             ]
          }
       ],
-      ""cioc"":"""",
+      ""alpha3Code"":"""",
       ""name"":""British Indian Ocean Territory"",
       ""capital"":""Diego Garcia"",
       ""region"":""Africa"",
@@ -1556,7 +1556,7 @@
       ""regionalBlocs"":[
          
       ],
-      ""cioc"":"""",
+      ""alpha3Code"":"""",
       ""name"":""United States Minor Outlying Islands"",
       ""capital"":"""",
       ""region"":""Americas"",
@@ -1594,7 +1594,7 @@
       ""regionalBlocs"":[
          
       ],
-      ""cioc"":""IVB"",
+      ""alpha3Code"":""IVB"",
       ""name"":""Virgin Islands (British)"",
       ""capital"":""Road Town"",
       ""region"":""Americas"",
@@ -1626,7 +1626,7 @@
       ""regionalBlocs"":[
          
       ],
-      ""cioc"":""ISV"",
+      ""alpha3Code"":""ISV"",
       ""name"":""Virgin Islands (U.S.)"",
       ""capital"":""Charlotte Amalie"",
       ""region"":""Americas"",
@@ -1672,7 +1672,7 @@
             ]
          }
       ],
-      ""cioc"":""BRU"",
+      ""alpha3Code"":""BRU"",
       ""name"":""Brunei Darussalam"",
       ""capital"":""Bandar Seri Begawan"",
       ""region"":""Asia"",
@@ -1713,7 +1713,7 @@
             ]
          }
       ],
-      ""cioc"":""BUL"",
+      ""alpha3Code"":""BUL"",
       ""name"":""Bulgaria"",
       ""capital"":""Sofia"",
       ""region"":""Europe"",
@@ -1768,7 +1768,7 @@
             ]
          }
       ],
-      ""cioc"":""BUR"",
+      ""alpha3Code"":""BUR"",
       ""name"":""Burkina Faso"",
       ""capital"":""Ouagadougou"",
       ""region"":""Africa"",
@@ -1824,7 +1824,7 @@
             ]
          }
       ],
-      ""cioc"":""BDI"",
+      ""alpha3Code"":""BDI"",
       ""name"":""Burundi"",
       ""capital"":""Bujumbura"",
       ""region"":""Africa"",
@@ -1872,7 +1872,7 @@
             ]
          }
       ],
-      ""cioc"":""CAM"",
+      ""alpha3Code"":""CAM"",
       ""name"":""Cambodia"",
       ""capital"":""Phnom Penh"",
       ""region"":""Asia"",
@@ -1925,7 +1925,7 @@
             ]
          }
       ],
-      ""cioc"":""CMR"",
+      ""alpha3Code"":""CMR"",
       ""name"":""Cameroon"",
       ""capital"":""Yaoundé"",
       ""region"":""Africa"",
@@ -1978,7 +1978,7 @@
             ]
          }
       ],
-      ""cioc"":""CAN"",
+      ""alpha3Code"":""CAN"",
       ""name"":""Canada"",
       ""capital"":""Ottawa"",
       ""region"":""Americas"",
@@ -2028,7 +2028,7 @@
             ]
          }
       ],
-      ""cioc"":""CPV"",
+      ""alpha3Code"":""CPV"",
       ""name"":""Cabo Verde"",
       ""capital"":""Praia"",
       ""region"":""Africa"",
@@ -2060,7 +2060,7 @@
       ""regionalBlocs"":[
          
       ],
-      ""cioc"":""CAY"",
+      ""alpha3Code"":""CAY"",
       ""name"":""Cayman Islands"",
       ""capital"":""George Town"",
       ""region"":""Americas"",
@@ -2111,7 +2111,7 @@
             ]
          }
       ],
-      ""cioc"":""CAF"",
+      ""alpha3Code"":""CAF"",
       ""name"":""Central African Republic"",
       ""capital"":""Bangui"",
       ""region"":""Africa"",
@@ -2167,7 +2167,7 @@
             ]
          }
       ],
-      ""cioc"":""CHA"",
+      ""alpha3Code"":""CHA"",
       ""name"":""Chad"",
       ""capital"":""N'Djamena"",
       ""region"":""Africa"",
@@ -2228,7 +2228,7 @@
             ]
          }
       ],
-      ""cioc"":""CHI"",
+      ""alpha3Code"":""CHI"",
       ""name"":""Chile"",
       ""capital"":""Santiago"",
       ""region"":""Americas"",
@@ -2263,7 +2263,7 @@
       ""regionalBlocs"":[
          
       ],
-      ""cioc"":""CHN"",
+      ""alpha3Code"":""CHN"",
       ""name"":""China"",
       ""capital"":""Beijing"",
       ""region"":""Asia"",
@@ -2309,7 +2309,7 @@
       ""regionalBlocs"":[
          
       ],
-      ""cioc"":"""",
+      ""alpha3Code"":"""",
       ""name"":""Christmas Island"",
       ""capital"":""Flying Fish Cove"",
       ""region"":""Oceania"",
@@ -2341,7 +2341,7 @@
       ""regionalBlocs"":[
          
       ],
-      ""cioc"":"""",
+      ""alpha3Code"":"""",
       ""name"":""Cocos (Keeling) Islands"",
       ""capital"":""West Island"",
       ""region"":""Oceania"",
@@ -2397,7 +2397,7 @@
             ]
          }
       ],
-      ""cioc"":""COL"",
+      ""alpha3Code"":""COL"",
       ""name"":""Colombia"",
       ""capital"":""Bogotá"",
       ""region"":""Americas"",
@@ -2464,7 +2464,7 @@
             ]
          }
       ],
-      ""cioc"":""COM"",
+      ""alpha3Code"":""COM"",
       ""name"":""Comoros"",
       ""capital"":""Moroni"",
       ""region"":""Africa"",
@@ -2515,7 +2515,7 @@
             ]
          }
       ],
-      ""cioc"":""CGO"",
+      ""alpha3Code"":""CGO"",
       ""name"":""Congo"",
       ""capital"":""Brazzaville"",
       ""region"":""Africa"",
@@ -2588,7 +2588,7 @@
             ]
          }
       ],
-      ""cioc"":""COD"",
+      ""alpha3Code"":""COD"",
       ""name"":""Congo (Democratic Republic of the)"",
       ""capital"":""Kinshasa"",
       ""region"":""Africa"",
@@ -2634,7 +2634,7 @@
       ""regionalBlocs"":[
          
       ],
-      ""cioc"":""COK"",
+      ""alpha3Code"":""COK"",
       ""name"":""Cook Islands"",
       ""capital"":""Avarua"",
       ""region"":""Oceania"",
@@ -2675,7 +2675,7 @@
             ]
          }
       ],
-      ""cioc"":""CRC"",
+      ""alpha3Code"":""CRC"",
       ""name"":""Costa Rica"",
       ""capital"":""San José"",
       ""region"":""Americas"",
@@ -2717,7 +2717,7 @@
             ]
          }
       ],
-      ""cioc"":""CRO"",
+      ""alpha3Code"":""CRO"",
       ""name"":""Croatia"",
       ""capital"":""Zagreb"",
       ""region"":""Europe"",
@@ -2758,7 +2758,7 @@
       ""regionalBlocs"":[
          
       ],
-      ""cioc"":""CUB"",
+      ""alpha3Code"":""CUB"",
       ""name"":""Cuba"",
       ""capital"":""Havana"",
       ""region"":""Americas"",
@@ -2802,7 +2802,7 @@
       ""regionalBlocs"":[
          
       ],
-      ""cioc"":"""",
+      ""alpha3Code"":"""",
       ""name"":""Curaçao"",
       ""capital"":""Willemstad"",
       ""region"":""Americas"",
@@ -2855,7 +2855,7 @@
             ]
          }
       ],
-      ""cioc"":""CYP"",
+      ""alpha3Code"":""CYP"",
       ""name"":""Cyprus"",
       ""capital"":""Nicosia"",
       ""region"":""Europe"",
@@ -2902,7 +2902,7 @@
             ]
          }
       ],
-      ""cioc"":""CZE"",
+      ""alpha3Code"":""CZE"",
       ""name"":""Czech Republic"",
       ""capital"":""Prague"",
       ""region"":""Europe"",
@@ -2946,7 +2946,7 @@
             ]
          }
       ],
-      ""cioc"":""DEN"",
+      ""alpha3Code"":""DEN"",
       ""name"":""Denmark"",
       ""capital"":""Copenhagen"",
       ""region"":""Europe"",
@@ -3013,7 +3013,7 @@
             ]
          }
       ],
-      ""cioc"":""DJI"",
+      ""alpha3Code"":""DJI"",
       ""name"":""Djibouti"",
       ""capital"":""Djibouti"",
       ""region"":""Africa"",
@@ -3047,7 +3047,7 @@
       ""regionalBlocs"":[
          
       ],
-      ""cioc"":""DMA"",
+      ""alpha3Code"":""DMA"",
       ""name"":""Dominica"",
       ""capital"":""Roseau"",
       ""region"":""Americas"",
@@ -3100,7 +3100,7 @@
             ]
          }
       ],
-      ""cioc"":""DOM"",
+      ""alpha3Code"":""DOM"",
       ""name"":""Dominican Republic"",
       ""capital"":""Santo Domingo"",
       ""region"":""Americas"",
@@ -3146,7 +3146,7 @@
             ]
          }
       ],
-      ""cioc"":""ECU"",
+      ""alpha3Code"":""ECU"",
       ""name"":""Ecuador"",
       ""capital"":""Quito"",
       ""region"":""Americas"",
@@ -3205,7 +3205,7 @@
             ]
          }
       ],
-      ""cioc"":""EGY"",
+      ""alpha3Code"":""EGY"",
       ""name"":""Egypt"",
       ""capital"":""Cairo"",
       ""region"":""Africa"",
@@ -3248,7 +3248,7 @@
             ]
          }
       ],
-      ""cioc"":""ESA"",
+      ""alpha3Code"":""ESA"",
       ""name"":""El Salvador"",
       ""capital"":""San Salvador"",
       ""region"":""Americas"",
@@ -3300,7 +3300,7 @@
             ]
          }
       ],
-      ""cioc"":""GEQ"",
+      ""alpha3Code"":""GEQ"",
       ""name"":""Equatorial Guinea"",
       ""capital"":""Malabo"",
       ""region"":""Africa"",
@@ -3358,7 +3358,7 @@
             ]
          }
       ],
-      ""cioc"":""ERI"",
+      ""alpha3Code"":""ERI"",
       ""name"":""Eritrea"",
       ""capital"":""Asmara"",
       ""region"":""Africa"",
@@ -3401,7 +3401,7 @@
             ]
          }
       ],
-      ""cioc"":""EST"",
+      ""alpha3Code"":""EST"",
       ""name"":""Estonia"",
       ""capital"":""Tallinn"",
       ""region"":""Europe"",
@@ -3447,7 +3447,7 @@
             ]
          }
       ],
-      ""cioc"":""ETH"",
+      ""alpha3Code"":""ETH"",
       ""name"":""Ethiopia"",
       ""capital"":""Addis Ababa"",
       ""region"":""Africa"",
@@ -3498,7 +3498,7 @@
             ]
          }
       ],
-      ""cioc"":"""",
+      ""alpha3Code"":"""",
       ""name"":""Falkland Islands (Malvinas)"",
       ""capital"":""Stanley"",
       ""region"":""Americas"",
@@ -3544,7 +3544,7 @@
             ]
          }
       ],
-      ""cioc"":"""",
+      ""alpha3Code"":"""",
       ""name"":""Faroe Islands"",
       ""capital"":""Tórshavn"",
       ""region"":""Europe"",
@@ -3594,7 +3594,7 @@
       ""regionalBlocs"":[
          
       ],
-      ""cioc"":""FIJ"",
+      ""alpha3Code"":""FIJ"",
       ""name"":""Fiji"",
       ""capital"":""Suva"",
       ""region"":""Oceania"",
@@ -3641,7 +3641,7 @@
             ]
          }
       ],
-      ""cioc"":""FIN"",
+      ""alpha3Code"":""FIN"",
       ""name"":""Finland"",
       ""capital"":""Helsinki"",
       ""region"":""Europe"",
@@ -3684,7 +3684,7 @@
             ]
          }
       ],
-      ""cioc"":""FRA"",
+      ""alpha3Code"":""FRA"",
       ""name"":""France"",
       ""capital"":""Paris"",
       ""region"":""Europe"",
@@ -3758,7 +3758,7 @@
             ]
          }
       ],
-      ""cioc"":"""",
+      ""alpha3Code"":"""",
       ""name"":""French Guiana"",
       ""capital"":""Cayenne"",
       ""region"":""Americas"",
@@ -3791,7 +3791,7 @@
       ""regionalBlocs"":[
          
       ],
-      ""cioc"":"""",
+      ""alpha3Code"":"""",
       ""name"":""French Polynesia"",
       ""capital"":""Papeetē"",
       ""region"":""Oceania"",
@@ -3838,7 +3838,7 @@
             ]
          }
       ],
-      ""cioc"":"""",
+      ""alpha3Code"":"""",
       ""name"":""French Southern Territories"",
       ""capital"":""Port-aux-Français"",
       ""region"":""Africa"",
@@ -3883,7 +3883,7 @@
             ]
          }
       ],
-      ""cioc"":""GAB"",
+      ""alpha3Code"":""GAB"",
       ""name"":""Gabon"",
       ""capital"":""Libreville"",
       ""region"":""Africa"",
@@ -3930,7 +3930,7 @@
             ]
          }
       ],
-      ""cioc"":""GAM"",
+      ""alpha3Code"":""GAM"",
       ""name"":""Gambia"",
       ""capital"":""Banjul"",
       ""region"":""Africa"",
@@ -3962,7 +3962,7 @@
       ""regionalBlocs"":[
          
       ],
-      ""cioc"":""GEO"",
+      ""alpha3Code"":""GEO"",
       ""name"":""Georgia"",
       ""capital"":""Tbilisi"",
       ""region"":""Asia"",
@@ -4006,7 +4006,7 @@
             ]
          }
       ],
-      ""cioc"":""GER"",
+      ""alpha3Code"":""GER"",
       ""name"":""Germany"",
       ""capital"":""Berlin"",
       ""region"":""Europe"",
@@ -4059,7 +4059,7 @@
             ]
          }
       ],
-      ""cioc"":""GHA"",
+      ""alpha3Code"":""GHA"",
       ""name"":""Ghana"",
       ""capital"":""Accra"",
       ""region"":""Africa"",
@@ -4102,7 +4102,7 @@
             ]
          }
       ],
-      ""cioc"":"""",
+      ""alpha3Code"":"""",
       ""name"":""Gibraltar"",
       ""capital"":""Gibraltar"",
       ""region"":""Europe"",
@@ -4143,7 +4143,7 @@
             ]
          }
       ],
-      ""cioc"":""GRE"",
+      ""alpha3Code"":""GRE"",
       ""name"":""Greece"",
       ""capital"":""Athens"",
       ""region"":""Europe"",
@@ -4178,7 +4178,7 @@
       ""regionalBlocs"":[
          
       ],
-      ""cioc"":"""",
+      ""alpha3Code"":"""",
       ""name"":""Greenland"",
       ""capital"":""Nuuk"",
       ""region"":""Americas"",
@@ -4224,7 +4224,7 @@
             ]
          }
       ],
-      ""cioc"":""GRN"",
+      ""alpha3Code"":""GRN"",
       ""name"":""Grenada"",
       ""capital"":""St. George's"",
       ""region"":""Americas"",
@@ -4256,7 +4256,7 @@
       ""regionalBlocs"":[
          
       ],
-      ""cioc"":"""",
+      ""alpha3Code"":"""",
       ""name"":""Guadeloupe"",
       ""capital"":""Basse-Terre"",
       ""region"":""Americas"",
@@ -4300,7 +4300,7 @@
       ""regionalBlocs"":[
          
       ],
-      ""cioc"":""GUM"",
+      ""alpha3Code"":""GUM"",
       ""name"":""Guam"",
       ""capital"":""Hagåtña"",
       ""region"":""Oceania"",
@@ -4341,7 +4341,7 @@
             ]
          }
       ],
-      ""cioc"":""GUA"",
+      ""alpha3Code"":""GUA"",
       ""name"":""Guatemala"",
       ""capital"":""Guatemala City"",
       ""region"":""Americas"",
@@ -4387,7 +4387,7 @@
       ""regionalBlocs"":[
          
       ],
-      ""cioc"":"""",
+      ""alpha3Code"":"""",
       ""name"":""Guernsey"",
       ""capital"":""St. Peter Port"",
       ""region"":""Europe"",
@@ -4438,7 +4438,7 @@
             ]
          }
       ],
-      ""cioc"":""GUI"",
+      ""alpha3Code"":""GUI"",
       ""name"":""Guinea"",
       ""capital"":""Conakry"",
       ""region"":""Africa"",
@@ -4488,7 +4488,7 @@
             ]
          }
       ],
-      ""cioc"":""GBS"",
+      ""alpha3Code"":""GBS"",
       ""name"":""Guinea-Bissau"",
       ""capital"":""Bissau"",
       ""region"":""Africa"",
@@ -4547,7 +4547,7 @@
             ]
          }
       ],
-      ""cioc"":""GUY"",
+      ""alpha3Code"":""GUY"",
       ""name"":""Guyana"",
       ""capital"":""Georgetown"",
       ""region"":""Americas"",
@@ -4598,7 +4598,7 @@
             ]
          }
       ],
-      ""cioc"":""HAI"",
+      ""alpha3Code"":""HAI"",
       ""name"":""Haiti"",
       ""capital"":""Port-au-Prince"",
       ""region"":""Americas"",
@@ -4630,7 +4630,7 @@
       ""regionalBlocs"":[
          
       ],
-      ""cioc"":"""",
+      ""alpha3Code"":"""",
       ""name"":""Heard Island and McDonald Islands"",
       ""capital"":"""",
       ""region"":"""",
@@ -4680,7 +4680,7 @@
       ""regionalBlocs"":[
          
       ],
-      ""cioc"":"""",
+      ""alpha3Code"":"""",
       ""name"":""Holy See"",
       ""capital"":""Rome"",
       ""region"":""Europe"",
@@ -4721,7 +4721,7 @@
             ]
          }
       ],
-      ""cioc"":""HON"",
+      ""alpha3Code"":""HON"",
       ""name"":""Honduras"",
       ""capital"":""Tegucigalpa"",
       ""region"":""Americas"",
@@ -4761,7 +4761,7 @@
       ""regionalBlocs"":[
          
       ],
-      ""cioc"":""HKG"",
+      ""alpha3Code"":""HKG"",
       ""name"":""Hong Kong"",
       ""capital"":""City of Victoria"",
       ""region"":""Asia"",
@@ -4802,7 +4802,7 @@
             ]
          }
       ],
-      ""cioc"":""HUN"",
+      ""alpha3Code"":""HUN"",
       ""name"":""Hungary"",
       ""capital"":""Budapest"",
       ""region"":""Europe"",
@@ -4849,7 +4849,7 @@
             ]
          }
       ],
-      ""cioc"":""ISL"",
+      ""alpha3Code"":""ISL"",
       ""name"":""Iceland"",
       ""capital"":""Reykjavík"",
       ""region"":""Europe"",
@@ -4896,7 +4896,7 @@
             ]
          }
       ],
-      ""cioc"":""IND"",
+      ""alpha3Code"":""IND"",
       ""name"":""India"",
       ""capital"":""New Delhi"",
       ""region"":""Asia"",
@@ -4944,7 +4944,7 @@
             ]
          }
       ],
-      ""cioc"":""INA"",
+      ""alpha3Code"":""INA"",
       ""name"":""Indonesia"",
       ""capital"":""Jakarta"",
       ""region"":""Asia"",
@@ -4993,7 +4993,7 @@
             ]
          }
       ],
-      ""cioc"":""CIV"",
+      ""alpha3Code"":""CIV"",
       ""name"":""Côte d'Ivoire"",
       ""capital"":""Yamoussoukro"",
       ""region"":""Africa"",
@@ -5029,7 +5029,7 @@
       ""regionalBlocs"":[
          
       ],
-      ""cioc"":""IRI"",
+      ""alpha3Code"":""IRI"",
       ""name"":""Iran (Islamic Republic of)"",
       ""capital"":""Tehran"",
       ""region"":""Asia"",
@@ -5084,7 +5084,7 @@
             ]
          }
       ],
-      ""cioc"":""IRQ"",
+      ""alpha3Code"":""IRQ"",
       ""name"":""Iraq"",
       ""capital"":""Baghdad"",
       ""region"":""Asia"",
@@ -5136,7 +5136,7 @@
             ]
          }
       ],
-      ""cioc"":""IRL"",
+      ""alpha3Code"":""IRL"",
       ""name"":""Ireland"",
       ""capital"":""Dublin"",
       ""region"":""Europe"",
@@ -5188,7 +5188,7 @@
             ]
          }
       ],
-      ""cioc"":"""",
+      ""alpha3Code"":"""",
       ""name"":""Isle of Man"",
       ""capital"":""Douglas"",
       ""region"":""Europe"",
@@ -5226,7 +5226,7 @@
       ""regionalBlocs"":[
          
       ],
-      ""cioc"":""ISR"",
+      ""alpha3Code"":""ISR"",
       ""name"":""Israel"",
       ""capital"":""Jerusalem"",
       ""region"":""Asia"",
@@ -5270,7 +5270,7 @@
             ]
          }
       ],
-      ""cioc"":""ITA"",
+      ""alpha3Code"":""ITA"",
       ""name"":""Italy"",
       ""capital"":""Rome"",
       ""region"":""Europe"",
@@ -5318,7 +5318,7 @@
             ]
          }
       ],
-      ""cioc"":""JAM"",
+      ""alpha3Code"":""JAM"",
       ""name"":""Jamaica"",
       ""capital"":""Kingston"",
       ""region"":""Americas"",
@@ -5350,7 +5350,7 @@
       ""regionalBlocs"":[
          
       ],
-      ""cioc"":""JPN"",
+      ""alpha3Code"":""JPN"",
       ""name"":""Japan"",
       ""capital"":""Tokyo"",
       ""region"":""Asia"",
@@ -5393,7 +5393,7 @@
       ""regionalBlocs"":[
          
       ],
-      ""cioc"":"""",
+      ""alpha3Code"":"""",
       ""name"":""Jersey"",
       ""capital"":""Saint Helier"",
       ""region"":""Europe"",
@@ -5436,7 +5436,7 @@
             ]
          }
       ],
-      ""cioc"":""JOR"",
+      ""alpha3Code"":""JOR"",
       ""name"":""Jordan"",
       ""capital"":""Amman"",
       ""region"":""Asia"",
@@ -5485,7 +5485,7 @@
             ]
          }
       ],
-      ""cioc"":""KAZ"",
+      ""alpha3Code"":""KAZ"",
       ""name"":""Kazakhstan"",
       ""capital"":""Astana"",
       ""region"":""Asia"",
@@ -5541,7 +5541,7 @@
             ]
          }
       ],
-      ""cioc"":""KEN"",
+      ""alpha3Code"":""KEN"",
       ""name"":""Kenya"",
       ""capital"":""Nairobi"",
       ""region"":""Africa"",
@@ -5582,7 +5582,7 @@
       ""regionalBlocs"":[
          
       ],
-      ""cioc"":""KIR"",
+      ""alpha3Code"":""KIR"",
       ""name"":""Kiribati"",
       ""capital"":""South Tarawa"",
       ""region"":""Oceania"",
@@ -5627,7 +5627,7 @@
             ]
          }
       ],
-      ""cioc"":""KUW"",
+      ""alpha3Code"":""KUW"",
       ""name"":""Kuwait"",
       ""capital"":""Kuwait City"",
       ""region"":""Asia"",
@@ -5675,7 +5675,7 @@
             ]
          }
       ],
-      ""cioc"":""KGZ"",
+      ""alpha3Code"":""KGZ"",
       ""name"":""Kyrgyzstan"",
       ""capital"":""Bishkek"",
       ""region"":""Asia"",
@@ -5719,7 +5719,7 @@
             ]
          }
       ],
-      ""cioc"":""LAO"",
+      ""alpha3Code"":""LAO"",
       ""name"":""Lao People's Democratic Republic"",
       ""capital"":""Vientiane"",
       ""region"":""Asia"",
@@ -5764,7 +5764,7 @@
             ]
          }
       ],
-      ""cioc"":""LAT"",
+      ""alpha3Code"":""LAT"",
       ""name"":""Latvia"",
       ""capital"":""Riga"",
       ""region"":""Europe"",
@@ -5816,7 +5816,7 @@
             ]
          }
       ],
-      ""cioc"":""LIB"",
+      ""alpha3Code"":""LIB"",
       ""name"":""Lebanon"",
       ""capital"":""Beirut"",
       ""region"":""Asia"",
@@ -5873,7 +5873,7 @@
             ]
          }
       ],
-      ""cioc"":""LES"",
+      ""alpha3Code"":""LES"",
       ""name"":""Lesotho"",
       ""capital"":""Maseru"",
       ""region"":""Africa"",
@@ -5918,7 +5918,7 @@
             ]
          }
       ],
-      ""cioc"":""LBR"",
+      ""alpha3Code"":""LBR"",
       ""name"":""Liberia"",
       ""capital"":""Monrovia"",
       ""region"":""Africa"",
@@ -5977,7 +5977,7 @@
             ]
          }
       ],
-      ""cioc"":""LBA"",
+      ""alpha3Code"":""LBA"",
       ""name"":""Libya"",
       ""capital"":""Tripoli"",
       ""region"":""Africa"",
@@ -6023,7 +6023,7 @@
             ]
          }
       ],
-      ""cioc"":""LIE"",
+      ""alpha3Code"":""LIE"",
       ""name"":""Liechtenstein"",
       ""capital"":""Vaduz"",
       ""region"":""Europe"",
@@ -6065,7 +6065,7 @@
             ]
          }
       ],
-      ""cioc"":""LTU"",
+      ""alpha3Code"":""LTU"",
       ""name"":""Lithuania"",
       ""capital"":""Vilnius"",
       ""region"":""Europe"",
@@ -6121,7 +6121,7 @@
             ]
          }
       ],
-      ""cioc"":""LUX"",
+      ""alpha3Code"":""LUX"",
       ""name"":""Luxembourg"",
       ""capital"":""Luxembourg"",
       ""region"":""Europe"",
@@ -6161,7 +6161,7 @@
       ""regionalBlocs"":[
          
       ],
-      ""cioc"":"""",
+      ""alpha3Code"":"""",
       ""name"":""Macao"",
       ""capital"":"""",
       ""region"":""Asia"",
@@ -6202,7 +6202,7 @@
             ]
          }
       ],
-      ""cioc"":""MKD"",
+      ""alpha3Code"":""MKD"",
       ""name"":""Macedonia (the former Yugoslav Republic of)"",
       ""capital"":""Skopje"",
       ""region"":""Europe"",
@@ -6257,7 +6257,7 @@
             ]
          }
       ],
-      ""cioc"":""MAD"",
+      ""alpha3Code"":""MAD"",
       ""name"":""Madagascar"",
       ""capital"":""Antananarivo"",
       ""region"":""Africa"",
@@ -6308,7 +6308,7 @@
             ]
          }
       ],
-      ""cioc"":""MAW"",
+      ""alpha3Code"":""MAW"",
       ""name"":""Malawi"",
       ""capital"":""Lilongwe"",
       ""region"":""Africa"",
@@ -6350,7 +6350,7 @@
             ]
          }
       ],
-      ""cioc"":""MAS"",
+      ""alpha3Code"":""MAS"",
       ""name"":""Malaysia"",
       ""capital"":""Kuala Lumpur"",
       ""region"":""Asia"",
@@ -6393,7 +6393,7 @@
             ]
          }
       ],
-      ""cioc"":""MDV"",
+      ""alpha3Code"":""MDV"",
       ""name"":""Maldives"",
       ""capital"":""Malé"",
       ""region"":""Asia"",
@@ -6438,7 +6438,7 @@
             ]
          }
       ],
-      ""cioc"":""MLI"",
+      ""alpha3Code"":""MLI"",
       ""name"":""Mali"",
       ""capital"":""Bamako"",
       ""region"":""Africa"",
@@ -6491,7 +6491,7 @@
             ]
          }
       ],
-      ""cioc"":""MLT"",
+      ""alpha3Code"":""MLT"",
       ""name"":""Malta"",
       ""capital"":""Valletta"",
       ""region"":""Europe"",
@@ -6529,7 +6529,7 @@
       ""regionalBlocs"":[
          
       ],
-      ""cioc"":""MHL"",
+      ""alpha3Code"":""MHL"",
       ""name"":""Marshall Islands"",
       ""capital"":""Majuro"",
       ""region"":""Oceania"",
@@ -6561,7 +6561,7 @@
       ""regionalBlocs"":[
          
       ],
-      ""cioc"":"""",
+      ""alpha3Code"":"""",
       ""name"":""Martinique"",
       ""capital"":""Fort-de-France"",
       ""region"":""Americas"",
@@ -6618,7 +6618,7 @@
             ]
          }
       ],
-      ""cioc"":""MTN"",
+      ""alpha3Code"":""MTN"",
       ""name"":""Mauritania"",
       ""capital"":""Nouakchott"",
       ""region"":""Africa"",
@@ -6666,7 +6666,7 @@
             ]
          }
       ],
-      ""cioc"":""MRI"",
+      ""alpha3Code"":""MRI"",
       ""name"":""Mauritius"",
       ""capital"":""Port Louis"",
       ""region"":""Africa"",
@@ -6711,7 +6711,7 @@
             ]
          }
       ],
-      ""cioc"":"""",
+      ""alpha3Code"":"""",
       ""name"":""Mayotte"",
       ""capital"":""Mamoudzou"",
       ""region"":""Africa"",
@@ -6763,7 +6763,7 @@
             ]
          }
       ],
-      ""cioc"":""MEX"",
+      ""alpha3Code"":""MEX"",
       ""name"":""Mexico"",
       ""capital"":""Mexico City"",
       ""region"":""Americas"",
@@ -6803,7 +6803,7 @@
       ""regionalBlocs"":[
          
       ],
-      ""cioc"":""FSM"",
+      ""alpha3Code"":""FSM"",
       ""name"":""Micronesia (Federated States of)"",
       ""capital"":""Palikir"",
       ""region"":""Oceania"",
@@ -6845,7 +6845,7 @@
             ]
          }
       ],
-      ""cioc"":""MDA"",
+      ""alpha3Code"":""MDA"",
       ""name"":""Moldova (Republic of)"",
       ""capital"":""Chișinău"",
       ""region"":""Europe"",
@@ -6878,7 +6878,7 @@
       ""regionalBlocs"":[
          
       ],
-      ""cioc"":""MON"",
+      ""alpha3Code"":""MON"",
       ""name"":""Monaco"",
       ""capital"":""Monaco"",
       ""region"":""Europe"",
@@ -6910,7 +6910,7 @@
       ""regionalBlocs"":[
          
       ],
-      ""cioc"":""MGL"",
+      ""alpha3Code"":""MGL"",
       ""name"":""Mongolia"",
       ""capital"":""Ulan Bator"",
       ""region"":""Asia"",
@@ -6971,7 +6971,7 @@
             ]
          }
       ],
-      ""cioc"":""MNE"",
+      ""alpha3Code"":""MNE"",
       ""name"":""Montenegro"",
       ""capital"":""Podgorica"",
       ""region"":""Europe"",
@@ -7018,7 +7018,7 @@
             ]
          }
       ],
-      ""cioc"":"""",
+      ""alpha3Code"":"""",
       ""name"":""Montserrat"",
       ""capital"":""Plymouth"",
       ""region"":""Americas"",
@@ -7075,7 +7075,7 @@
             ]
          }
       ],
-      ""cioc"":""MAR"",
+      ""alpha3Code"":""MAR"",
       ""name"":""Morocco"",
       ""capital"":""Rabat"",
       ""region"":""Africa"",
@@ -7122,7 +7122,7 @@
             ]
          }
       ],
-      ""cioc"":""MOZ"",
+      ""alpha3Code"":""MOZ"",
       ""name"":""Mozambique"",
       ""capital"":""Maputo"",
       ""region"":""Africa"",
@@ -7168,7 +7168,7 @@
             ]
          }
       ],
-      ""cioc"":""MYA"",
+      ""alpha3Code"":""MYA"",
       ""name"":""Myanmar"",
       ""capital"":""Naypyidaw"",
       ""region"":""Asia"",
@@ -7228,7 +7228,7 @@
             ]
          }
       ],
-      ""cioc"":""NAM"",
+      ""alpha3Code"":""NAM"",
       ""name"":""Namibia"",
       ""capital"":""Windhoek"",
       ""region"":""Africa"",
@@ -7273,7 +7273,7 @@
       ""regionalBlocs"":[
          
       ],
-      ""cioc"":""NRU"",
+      ""alpha3Code"":""NRU"",
       ""name"":""Nauru"",
       ""capital"":""Yaren"",
       ""region"":""Oceania"",
@@ -7314,7 +7314,7 @@
             ]
          }
       ],
-      ""cioc"":""NEP"",
+      ""alpha3Code"":""NEP"",
       ""name"":""Nepal"",
       ""capital"":""Kathmandu"",
       ""region"":""Asia"",
@@ -7356,7 +7356,7 @@
             ]
          }
       ],
-      ""cioc"":""NED"",
+      ""alpha3Code"":""NED"",
       ""name"":""Netherlands"",
       ""capital"":""Amsterdam"",
       ""region"":""Europe"",
@@ -7390,7 +7390,7 @@
       ""regionalBlocs"":[
          
       ],
-      ""cioc"":"""",
+      ""alpha3Code"":"""",
       ""name"":""New Caledonia"",
       ""capital"":""Nouméa"",
       ""region"":""Oceania"",
@@ -7428,7 +7428,7 @@
       ""regionalBlocs"":[
          
       ],
-      ""cioc"":""NZL"",
+      ""alpha3Code"":""NZL"",
       ""name"":""New Zealand"",
       ""capital"":""Wellington"",
       ""region"":""Oceania"",
@@ -7473,7 +7473,7 @@
             ]
          }
       ],
-      ""cioc"":""NCA"",
+      ""alpha3Code"":""NCA"",
       ""name"":""Nicaragua"",
       ""capital"":""Managua"",
       ""region"":""Americas"",
@@ -7519,7 +7519,7 @@
             ]
          }
       ],
-      ""cioc"":""NIG"",
+      ""alpha3Code"":""NIG"",
       ""name"":""Niger"",
       ""capital"":""Niamey"",
       ""region"":""Africa"",
@@ -7570,7 +7570,7 @@
             ]
          }
       ],
-      ""cioc"":""NGR"",
+      ""alpha3Code"":""NGR"",
       ""name"":""Nigeria"",
       ""capital"":""Abuja"",
       ""region"":""Africa"",
@@ -7610,7 +7610,7 @@
       ""regionalBlocs"":[
          
       ],
-      ""cioc"":"""",
+      ""alpha3Code"":"""",
       ""name"":""Niue"",
       ""capital"":""Alofi"",
       ""region"":""Oceania"",
@@ -7642,7 +7642,7 @@
       ""regionalBlocs"":[
          
       ],
-      ""cioc"":"""",
+      ""alpha3Code"":"""",
       ""name"":""Norfolk Island"",
       ""capital"":""Kingston"",
       ""region"":""Oceania"",
@@ -7674,7 +7674,7 @@
       ""regionalBlocs"":[
          
       ],
-      ""cioc"":""PRK"",
+      ""alpha3Code"":""PRK"",
       ""name"":""Korea (Democratic People's Republic of)"",
       ""capital"":""Pyongyang"",
       ""region"":""Asia"",
@@ -7714,7 +7714,7 @@
       ""regionalBlocs"":[
          
       ],
-      ""cioc"":"""",
+      ""alpha3Code"":"""",
       ""name"":""Northern Mariana Islands"",
       ""capital"":""Saipan"",
       ""region"":""Oceania"",
@@ -7767,7 +7767,7 @@
             ]
          }
       ],
-      ""cioc"":""NOR"",
+      ""alpha3Code"":""NOR"",
       ""name"":""Norway"",
       ""capital"":""Oslo"",
       ""region"":""Europe"",
@@ -7812,7 +7812,7 @@
             ]
          }
       ],
-      ""cioc"":""OMA"",
+      ""alpha3Code"":""OMA"",
       ""name"":""Oman"",
       ""capital"":""Muscat"",
       ""region"":""Asia"",
@@ -7861,7 +7861,7 @@
             ]
          }
       ],
-      ""cioc"":""PAK"",
+      ""alpha3Code"":""PAK"",
       ""name"":""Pakistan"",
       ""capital"":""Islamabad"",
       ""region"":""Asia"",
@@ -7901,7 +7901,7 @@
       ""regionalBlocs"":[
          
       ],
-      ""cioc"":""PLW"",
+      ""alpha3Code"":""PLW"",
       ""name"":""Palau"",
       ""capital"":""Ngerulmud"",
       ""region"":""Oceania"",
@@ -7944,7 +7944,7 @@
             ]
          }
       ],
-      ""cioc"":""PLE"",
+      ""alpha3Code"":""PLE"",
       ""name"":""Palestine, State of"",
       ""capital"":""Ramallah"",
       ""region"":""Asia"",
@@ -7992,7 +7992,7 @@
             ]
          }
       ],
-      ""cioc"":""PAN"",
+      ""alpha3Code"":""PAN"",
       ""name"":""Panama"",
       ""capital"":""Panama City"",
       ""region"":""Americas"",
@@ -8025,7 +8025,7 @@
       ""regionalBlocs"":[
          
       ],
-      ""cioc"":""PNG"",
+      ""alpha3Code"":""PNG"",
       ""name"":""Papua New Guinea"",
       ""capital"":""Port Moresby"",
       ""region"":""Oceania"",
@@ -8077,7 +8077,7 @@
             ]
          }
       ],
-      ""cioc"":""PAR"",
+      ""alpha3Code"":""PAR"",
       ""name"":""Paraguay"",
       ""capital"":""Asunción"",
       ""region"":""Americas"",
@@ -8135,7 +8135,7 @@
             ]
          }
       ],
-      ""cioc"":""PER"",
+      ""alpha3Code"":""PER"",
       ""name"":""Peru"",
       ""capital"":""Lima"",
       ""region"":""Americas"",
@@ -8180,7 +8180,7 @@
             ]
          }
       ],
-      ""cioc"":""PHI"",
+      ""alpha3Code"":""PHI"",
       ""name"":""Philippines"",
       ""capital"":""Manila"",
       ""region"":""Asia"",
@@ -8216,7 +8216,7 @@
       ""regionalBlocs"":[
          
       ],
-      ""cioc"":"""",
+      ""alpha3Code"":"""",
       ""name"":""Pitcairn"",
       ""capital"":""Adamstown"",
       ""region"":""Oceania"",
@@ -8257,7 +8257,7 @@
             ]
          }
       ],
-      ""cioc"":""POL"",
+      ""alpha3Code"":""POL"",
       ""name"":""Poland"",
       ""capital"":""Warsaw"",
       ""region"":""Europe"",
@@ -8304,7 +8304,7 @@
             ]
          }
       ],
-      ""cioc"":""POR"",
+      ""alpha3Code"":""POR"",
       ""name"":""Portugal"",
       ""capital"":""Lisbon"",
       ""region"":""Europe"",
@@ -8343,7 +8343,7 @@
       ""regionalBlocs"":[
          
       ],
-      ""cioc"":""PUR"",
+      ""alpha3Code"":""PUR"",
       ""name"":""Puerto Rico"",
       ""capital"":""San Juan"",
       ""region"":""Americas"",
@@ -8386,7 +8386,7 @@
             ]
          }
       ],
-      ""cioc"":""QAT"",
+      ""alpha3Code"":""QAT"",
       ""name"":""Qatar"",
       ""capital"":""Doha"",
       ""region"":""Asia"",
@@ -8480,7 +8480,7 @@
             ]
          }
       ],
-      ""cioc"":"""",
+      ""alpha3Code"":"""",
       ""name"":""Réunion"",
       ""capital"":""Saint-Denis"",
       ""region"":""Africa"",
@@ -8521,7 +8521,7 @@
             ]
          }
       ],
-      ""cioc"":""ROU"",
+      ""alpha3Code"":""ROU"",
       ""name"":""Romania"",
       ""capital"":""Bucharest"",
       ""region"":""Europe"",
@@ -8566,7 +8566,7 @@
             ]
          }
       ],
-      ""cioc"":""RUS"",
+      ""alpha3Code"":""RUS"",
       ""name"":""Russian Federation"",
       ""capital"":""Moscow"",
       ""region"":""Europe"",
@@ -8644,7 +8644,7 @@
             ]
          }
       ],
-      ""cioc"":""RWA"",
+      ""alpha3Code"":""RWA"",
       ""name"":""Rwanda"",
       ""capital"":""Kigali"",
       ""region"":""Africa"",
@@ -8679,7 +8679,7 @@
       ""regionalBlocs"":[
          
       ],
-      ""cioc"":"""",
+      ""alpha3Code"":"""",
       ""name"":""Saint Barthélemy"",
       ""capital"":""Gustavia"",
       ""region"":""Americas"",
@@ -8766,7 +8766,7 @@
             ]
          }
       ],
-      ""cioc"":""SKN"",
+      ""alpha3Code"":""SKN"",
       ""name"":""Saint Kitts and Nevis"",
       ""capital"":""Basseterre"",
       ""region"":""Americas"",
@@ -8809,7 +8809,7 @@
             ]
          }
       ],
-      ""cioc"":""LCA"",
+      ""alpha3Code"":""LCA"",
       ""name"":""Saint Lucia"",
       ""capital"":""Castries"",
       ""region"":""Americas"",
@@ -8853,7 +8853,7 @@
       ""regionalBlocs"":[
          
       ],
-      ""cioc"":"""",
+      ""alpha3Code"":"""",
       ""name"":""Saint Martin (French part)"",
       ""capital"":""Marigot"",
       ""region"":""Americas"",
@@ -8886,7 +8886,7 @@
       ""regionalBlocs"":[
          
       ],
-      ""cioc"":"""",
+      ""alpha3Code"":"""",
       ""name"":""Saint Pierre and Miquelon"",
       ""capital"":""Saint-Pierre"",
       ""region"":""Americas"",
@@ -8929,7 +8929,7 @@
             ]
          }
       ],
-      ""cioc"":""VIN"",
+      ""alpha3Code"":""VIN"",
       ""name"":""Saint Vincent and the Grenadines"",
       ""capital"":""Kingstown"",
       ""region"":""Americas"",
@@ -8967,7 +8967,7 @@
       ""regionalBlocs"":[
          
       ],
-      ""cioc"":""SAM"",
+      ""alpha3Code"":""SAM"",
       ""name"":""Samoa"",
       ""capital"":""Apia"",
       ""region"":""Oceania"",
@@ -8999,7 +8999,7 @@
       ""regionalBlocs"":[
          
       ],
-      ""cioc"":""SMR"",
+      ""alpha3Code"":""SMR"",
       ""name"":""San Marino"",
       ""capital"":""City of San Marino"",
       ""region"":""Europe"",
@@ -9044,7 +9044,7 @@
             ]
          }
       ],
-      ""cioc"":""STP"",
+      ""alpha3Code"":""STP"",
       ""name"":""Sao Tome and Principe"",
       ""capital"":""São Tomé"",
       ""region"":""Africa"",
@@ -9087,7 +9087,7 @@
             ]
          }
       ],
-      ""cioc"":""KSA"",
+      ""alpha3Code"":""KSA"",
       ""name"":""Saudi Arabia"",
       ""capital"":""Riyadh"",
       ""region"":""Asia"",
@@ -9138,7 +9138,7 @@
             ]
          }
       ],
-      ""cioc"":""SEN"",
+      ""alpha3Code"":""SEN"",
       ""name"":""Senegal"",
       ""capital"":""Dakar"",
       ""region"":""Africa"",
@@ -9183,7 +9183,7 @@
             ]
          }
       ],
-      ""cioc"":""SRB"",
+      ""alpha3Code"":""SRB"",
       ""name"":""Serbia"",
       ""capital"":""Belgrade"",
       ""region"":""Europe"",
@@ -9241,7 +9241,7 @@
             ]
          }
       ],
-      ""cioc"":""SEY"",
+      ""alpha3Code"":""SEY"",
       ""name"":""Seychelles"",
       ""capital"":""Victoria"",
       ""region"":""Africa"",
@@ -9286,7 +9286,7 @@
             ]
          }
       ],
-      ""cioc"":""SLE"",
+      ""alpha3Code"":""SLE"",
       ""name"":""Sierra Leone"",
       ""capital"":""Freetown"",
       ""region"":""Africa"",
@@ -9351,7 +9351,7 @@
             ]
          }
       ],
-      ""cioc"":""SIN"",
+      ""alpha3Code"":""SIN"",
       ""name"":""Singapore"",
       ""capital"":""Singapore"",
       ""region"":""Asia"",
@@ -9389,7 +9389,7 @@
       ""regionalBlocs"":[
          
       ],
-      ""cioc"":"""",
+      ""alpha3Code"":"""",
       ""name"":""Sint Maarten (Dutch part)"",
       ""capital"":""Philipsburg"",
       ""region"":""Americas"",
@@ -9430,7 +9430,7 @@
             ]
          }
       ],
-      ""cioc"":""SVK"",
+      ""alpha3Code"":""SVK"",
       ""name"":""Slovakia"",
       ""capital"":""Bratislava"",
       ""region"":""Europe"",
@@ -9475,7 +9475,7 @@
             ]
          }
       ],
-      ""cioc"":""SLO"",
+      ""alpha3Code"":""SLO"",
       ""name"":""Slovenia"",
       ""capital"":""Ljubljana"",
       ""region"":""Europe"",
@@ -9510,7 +9510,7 @@
       ""regionalBlocs"":[
          
       ],
-      ""cioc"":""SOL"",
+      ""alpha3Code"":""SOL"",
       ""name"":""Solomon Islands"",
       ""capital"":""Honiara"",
       ""region"":""Oceania"",
@@ -9573,7 +9573,7 @@
             ]
          }
       ],
-      ""cioc"":""SOM"",
+      ""alpha3Code"":""SOM"",
       ""name"":""Somalia"",
       ""capital"":""Mogadishu"",
       ""region"":""Africa"",
@@ -9674,7 +9674,7 @@
             ]
          }
       ],
-      ""cioc"":""RSA"",
+      ""alpha3Code"":""RSA"",
       ""name"":""South Africa"",
       ""capital"":""Pretoria"",
       ""region"":""Africa"",
@@ -9729,7 +9729,7 @@
             ]
          }
       ],
-      ""cioc"":"""",
+      ""alpha3Code"":"""",
       ""name"":""South Georgia and the South Sandwich Islands"",
       ""capital"":""King Edward Point"",
       ""region"":""Americas"",
@@ -9761,7 +9761,7 @@
       ""regionalBlocs"":[
          
       ],
-      ""cioc"":""KOR"",
+      ""alpha3Code"":""KOR"",
       ""name"":""Korea (Republic of)"",
       ""capital"":""Seoul"",
       ""region"":""Asia"",
@@ -9806,7 +9806,7 @@
             ]
          }
       ],
-      ""cioc"":"""",
+      ""alpha3Code"":"""",
       ""name"":""South Sudan"",
       ""capital"":""Juba"",
       ""region"":""Africa"",
@@ -9852,7 +9852,7 @@
             ]
          }
       ],
-      ""cioc"":""ESP"",
+      ""alpha3Code"":""ESP"",
       ""name"":""Spain"",
       ""capital"":""Madrid"",
       ""region"":""Europe"",
@@ -9904,7 +9904,7 @@
             ]
          }
       ],
-      ""cioc"":""SRI"",
+      ""alpha3Code"":""SRI"",
       ""name"":""Sri Lanka"",
       ""capital"":""Colombo"",
       ""region"":""Asia"",
@@ -9967,7 +9967,7 @@
             ]
          }
       ],
-      ""cioc"":""SUD"",
+      ""alpha3Code"":""SUD"",
       ""name"":""Sudan"",
       ""capital"":""Khartoum"",
       ""region"":""Africa"",
@@ -10031,7 +10031,7 @@
             ]
          }
       ],
-      ""cioc"":""SUR"",
+      ""alpha3Code"":""SUR"",
       ""name"":""Suriname"",
       ""capital"":""Paramaribo"",
       ""region"":""Americas"",
@@ -10066,7 +10066,7 @@
       ""regionalBlocs"":[
          
       ],
-      ""cioc"":"""",
+      ""alpha3Code"":"""",
       ""name"":""Svalbard and Jan Mayen"",
       ""capital"":""Longyearbyen"",
       ""region"":""Europe"",
@@ -10117,7 +10117,7 @@
             ]
          }
       ],
-      ""cioc"":""SWZ"",
+      ""alpha3Code"":""SWZ"",
       ""name"":""Swaziland"",
       ""capital"":""Lobamba"",
       ""region"":""Africa"",
@@ -10159,7 +10159,7 @@
             ]
          }
       ],
-      ""cioc"":""SWE"",
+      ""alpha3Code"":""SWE"",
       ""name"":""Sweden"",
       ""capital"":""Stockholm"",
       ""region"":""Europe"",
@@ -10213,7 +10213,7 @@
             ]
          }
       ],
-      ""cioc"":""SUI"",
+      ""alpha3Code"":""SUI"",
       ""name"":""Switzerland"",
       ""capital"":""Bern"",
       ""region"":""Europe"",
@@ -10260,7 +10260,7 @@
             ]
          }
       ],
-      ""cioc"":""SYR"",
+      ""alpha3Code"":""SYR"",
       ""name"":""Syrian Arab Republic"",
       ""capital"":""Damascus"",
       ""region"":""Asia"",
@@ -10296,7 +10296,7 @@
       ""regionalBlocs"":[
          
       ],
-      ""cioc"":""TPE"",
+      ""alpha3Code"":""TPE"",
       ""name"":""Taiwan"",
       ""capital"":""Taipei"",
       ""region"":""Asia"",
@@ -10334,7 +10334,7 @@
       ""regionalBlocs"":[
          
       ],
-      ""cioc"":""TJK"",
+      ""alpha3Code"":""TJK"",
       ""name"":""Tajikistan"",
       ""capital"":""Dushanbe"",
       ""region"":""Asia"",
@@ -10388,7 +10388,7 @@
             ]
          }
       ],
-      ""cioc"":""TAN"",
+      ""alpha3Code"":""TAN"",
       ""name"":""Tanzania, United Republic of"",
       ""capital"":""Dodoma"",
       ""region"":""Africa"",
@@ -10436,7 +10436,7 @@
             ]
          }
       ],
-      ""cioc"":""THA"",
+      ""alpha3Code"":""THA"",
       ""name"":""Thailand"",
       ""capital"":""Bangkok"",
       ""region"":""Asia"",
@@ -10474,7 +10474,7 @@
       ""regionalBlocs"":[
          
       ],
-      ""cioc"":""TLS"",
+      ""alpha3Code"":""TLS"",
       ""name"":""Timor-Leste"",
       ""capital"":""Dili"",
       ""region"":""Asia"",
@@ -10519,7 +10519,7 @@
             ]
          }
       ],
-      ""cioc"":""TOG"",
+      ""alpha3Code"":""TOG"",
       ""name"":""Togo"",
       ""capital"":""Lomé"",
       ""region"":""Africa"",
@@ -10553,7 +10553,7 @@
       ""regionalBlocs"":[
          
       ],
-      ""cioc"":"""",
+      ""alpha3Code"":"""",
       ""name"":""Tokelau"",
       ""capital"":""Fakaofo"",
       ""region"":""Oceania"",
@@ -10591,7 +10591,7 @@
       ""regionalBlocs"":[
          
       ],
-      ""cioc"":""TGA"",
+      ""alpha3Code"":""TGA"",
       ""name"":""Tonga"",
       ""capital"":""Nuku'alofa"",
       ""region"":""Oceania"",
@@ -10634,7 +10634,7 @@
             ]
          }
       ],
-      ""cioc"":""TTO"",
+      ""alpha3Code"":""TTO"",
       ""name"":""Trinidad and Tobago"",
       ""capital"":""Port of Spain"",
       ""region"":""Americas"",
@@ -10691,7 +10691,7 @@
             ]
          }
       ],
-      ""cioc"":""TUN"",
+      ""alpha3Code"":""TUN"",
       ""name"":""Tunisia"",
       ""capital"":""Tunis"",
       ""region"":""Africa"",
@@ -10723,7 +10723,7 @@
       ""regionalBlocs"":[
          
       ],
-      ""cioc"":""TUR"",
+      ""alpha3Code"":""TUR"",
       ""name"":""Turkey"",
       ""capital"":""Ankara"",
       ""region"":""Asia"",
@@ -10768,7 +10768,7 @@
       ""regionalBlocs"":[
          
       ],
-      ""cioc"":""TKM"",
+      ""alpha3Code"":""TKM"",
       ""name"":""Turkmenistan"",
       ""capital"":""Ashgabat"",
       ""region"":""Asia"",
@@ -10803,7 +10803,7 @@
       ""regionalBlocs"":[
          
       ],
-      ""cioc"":"""",
+      ""alpha3Code"":"""",
       ""name"":""Turks and Caicos Islands"",
       ""capital"":""Cockburn Town"",
       ""region"":""Americas"",
@@ -10840,7 +10840,7 @@
       ""regionalBlocs"":[
          
       ],
-      ""cioc"":""TUV"",
+      ""alpha3Code"":""TUV"",
       ""name"":""Tuvalu"",
       ""capital"":""Funafuti"",
       ""region"":""Oceania"",
@@ -10891,7 +10891,7 @@
             ]
          }
       ],
-      ""cioc"":""UGA"",
+      ""alpha3Code"":""UGA"",
       ""name"":""Uganda"",
       ""capital"":""Kampala"",
       ""region"":""Africa"",
@@ -10927,7 +10927,7 @@
       ""regionalBlocs"":[
          
       ],
-      ""cioc"":""UKR"",
+      ""alpha3Code"":""UKR"",
       ""name"":""Ukraine"",
       ""capital"":""Kiev"",
       ""region"":""Europe"",
@@ -10976,7 +10976,7 @@
             ]
          }
       ],
-      ""cioc"":""UAE"",
+      ""alpha3Code"":""UAE"",
       ""name"":""United Arab Emirates"",
       ""capital"":""Abu Dhabi"",
       ""region"":""Asia"",
@@ -11018,7 +11018,7 @@
             ]
          }
       ],
-      ""cioc"":""GBR"",
+      ""alpha3Code"":""GBR"",
       ""name"":""United Kingdom of Great Britain and Northern Ireland"",
       ""capital"":""London"",
       ""region"":""Europe"",
@@ -11068,7 +11068,7 @@
             ]
          }
       ],
-      ""cioc"":""USA"",
+      ""alpha3Code"":""USA"",
       ""name"":""United States of America"",
       ""capital"":""Washington, D.C."",
       ""region"":""Americas"",
@@ -11125,7 +11125,7 @@
             ]
          }
       ],
-      ""cioc"":""URU"",
+      ""alpha3Code"":""URU"",
       ""name"":""Uruguay"",
       ""capital"":""Montevideo"",
       ""region"":""Americas"",
@@ -11163,7 +11163,7 @@
       ""regionalBlocs"":[
          
       ],
-      ""cioc"":""UZB"",
+      ""alpha3Code"":""UZB"",
       ""name"":""Uzbekistan"",
       ""capital"":""Tashkent"",
       ""region"":""Asia"",
@@ -11211,7 +11211,7 @@
       ""regionalBlocs"":[
          
       ],
-      ""cioc"":""VAN"",
+      ""alpha3Code"":""VAN"",
       ""name"":""Vanuatu"",
       ""capital"":""Port Vila"",
       ""region"":""Oceania"",
@@ -11257,7 +11257,7 @@
             ]
          }
       ],
-      ""cioc"":""VEN"",
+      ""alpha3Code"":""VEN"",
       ""name"":""Venezuela (Bolivarian Republic of)"",
       ""capital"":""Caracas"",
       ""region"":""Americas"",
@@ -11300,7 +11300,7 @@
             ]
          }
       ],
-      ""cioc"":""VIE"",
+      ""alpha3Code"":""VIE"",
       ""name"":""Viet Nam"",
       ""capital"":""Hanoi"",
       ""region"":""Asia"",
@@ -11334,7 +11334,7 @@
       ""regionalBlocs"":[
          
       ],
-      ""cioc"":"""",
+      ""alpha3Code"":"""",
       ""name"":""Wallis and Futuna"",
       ""capital"":""Mata-Utu"",
       ""region"":""Oceania"",
@@ -11384,7 +11384,7 @@
             ]
          }
       ],
-      ""cioc"":"""",
+      ""alpha3Code"":"""",
       ""name"":""Western Sahara"",
       ""capital"":""El Aaiún"",
       ""region"":""Africa"",
@@ -11429,7 +11429,7 @@
             ]
          }
       ],
-      ""cioc"":""YEM"",
+      ""alpha3Code"":""YEM"",
       ""name"":""Yemen"",
       ""capital"":""Sana'a"",
       ""region"":""Asia"",
@@ -11475,7 +11475,7 @@
             ]
          }
       ],
-      ""cioc"":""ZAM"",
+      ""alpha3Code"":""ZAM"",
       ""name"":""Zambia"",
       ""capital"":""Lusaka"",
       ""region"":""Africa"",
@@ -11577,7 +11577,7 @@
             ]
          }
       ],
-      ""cioc"":""ZIM"",
+      ""alpha3Code"":""ZIM"",
       ""name"":""Zimbabwe"",
       ""capital"":""Harare"",
       ""region"":""Africa"",

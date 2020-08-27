@@ -34,7 +34,7 @@ namespace Challenge.CountryServiceProxy.CacheDb
             var countriesDTOS = await _apiHTTPClient.GetAllFromRemote();
             var countries = countriesDTOS.Select(countryDTO => new Country(
                       countryDTO.Name,
-                      countryDTO.CIOC,
+                      countryDTO.Alpha3Code,
                       countryDTO.Flag,
                       countryDTO.Region,
                       countryDTO.Population,
@@ -65,7 +65,7 @@ namespace Challenge.CountryServiceProxy.CacheDb
             var countriesDTOS = await _apiHTTPClient.GetRegionFromRemote(regionName);
             var countries = countriesDTOS.Select(countryDTO => new Country(
                       countryDTO.Name,
-                      countryDTO.CIOC,
+                      countryDTO.Alpha3Code,
                       countryDTO.Flag,
                       countryDTO.Region,
                       countryDTO.Population,

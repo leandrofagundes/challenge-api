@@ -20,7 +20,7 @@ namespace Challenge.Application.Tests.Services
 
             _countries = countriesDTO.Select(countryDTO => new Country(
                       countryDTO.Name,
-                      countryDTO.CIOC,
+                      countryDTO.Alpha3Code,
                       countryDTO.Flag,
                       countryDTO.Region,
                       countryDTO.Population,

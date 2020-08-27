@@ -14,6 +14,9 @@ namespace Challenge.API.DependencyInjections
 
             services.AddScoped<UseCases.V1.Countries.GetByRegion.Presenter, UseCases.V1.Countries.GetByRegion.Presenter>();
             services.AddScoped<Application.UseCases.V1.Countries.GetByRegion.IOutputPort>(x => x.GetRequiredService<UseCases.V1.Countries.GetByRegion.Presenter>());
+            
+            services.AddScoped<UseCases.V1.Countries.GetRoute.Presenter, UseCases.V1.Countries.GetRoute.Presenter>();
+            services.AddScoped<Application.UseCases.V1.Countries.GetRoute.IOutputPort>(x => x.GetRequiredService<UseCases.V1.Countries.GetRoute.Presenter>());
 
             return services;
         }

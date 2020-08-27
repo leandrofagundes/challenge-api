@@ -21,6 +21,7 @@ namespace Challenge.API.UseCases.V1.Countries.Find
                 Name = outputData.Name,
                 Abbreviation = outputData.Abbreviation,
                 Currencies = string.Join(", ", outputData.Currencies.Select(currency => currency.Name)),
+                Region = outputData.Region,
                 Population = outputData.Population,
                 Flag = outputData.Flag,
                 EconomicBlocs = string.Join(", ", outputData.EconomicBlocs.Select(bloc => bloc.Acronym)),

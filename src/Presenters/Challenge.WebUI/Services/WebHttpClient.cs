@@ -24,7 +24,7 @@ namespace Challenge.WebUI.Services
             HttpClient = httpClient;
         }
 
-        public async Task<T> FindAsync<T>(string uriPath)
+        public async Task<T> GetAsync<T>(string uriPath)
         {
             T responseObject = default;
             using var httpResponse = await HttpClient.GetAsync(uriPath);
@@ -39,9 +39,9 @@ namespace Challenge.WebUI.Services
             return responseObject;
         }
 
+
         public async Task<U> GetAsync<T, U>(string uriPath, T requestData, CancellationToken cancellationToken)
         {
-
             var queryString = SerializeRequestDataIntoQueryString(requestData);
             uriPath = QueryHelpers.AddQueryString(uriPath, queryString);
 

@@ -24,8 +24,7 @@ namespace Challenge.Application.Tests.UseCases.V1.GetByRegion
                 _fixture.CountryServiceFake,
                 presenter);
 
-            var cancellationTokenSource = new CancellationTokenSource();
-            await useCase.Execute(new InputData("Americas"), cancellationTokenSource.Token);
+            await useCase.Execute(new InputData("Americas"));
 
             Assert.NotEmpty(presenter.OutputData.Countries);
         }
@@ -43,7 +42,7 @@ namespace Challenge.Application.Tests.UseCases.V1.GetByRegion
                 presenter);
 
             var cancellationTokenSource = new CancellationTokenSource();
-            await useCase.Execute(new InputData(regionName), cancellationTokenSource.Token);
+            await useCase.Execute(new InputData(regionName));
 
             var containsCountry = presenter.OutputData.Countries.Any(country => country.Name.Equals(countryName));
 
@@ -60,8 +59,7 @@ namespace Challenge.Application.Tests.UseCases.V1.GetByRegion
                 _fixture.CountryServiceFake,
                 presenter);
 
-            var cancellationTokenSource = new CancellationTokenSource();
-            await useCase.Execute(new InputData("SAdjlk SAdlkj ASçsad ASDk"), cancellationTokenSource.Token);
+            await useCase.Execute(new InputData("SAdjlk SAdlkj ASçsad ASDk"));
 
             Assert.Empty(presenter.OutputData.Countries);
         }
@@ -79,7 +77,7 @@ namespace Challenge.Application.Tests.UseCases.V1.GetByRegion
                 presenter);
 
             var cancellationTokenSource = new CancellationTokenSource();
-            await useCase.Execute(new InputData(regionName), cancellationTokenSource.Token);
+            await useCase.Execute(new InputData(regionName));
 
             var containsCountry = presenter.OutputData.Countries.Any(country => country.Name.Equals(countryName));
 

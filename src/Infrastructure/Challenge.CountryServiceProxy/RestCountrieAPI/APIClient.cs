@@ -12,7 +12,7 @@ namespace Challenge.CountryServiceProxy.RestCountrieAPI
         private readonly JsonSerializerOptions JsonOptions = new JsonSerializerOptions { PropertyNameCaseInsensitive = true, IgnoreNullValues = true };
         private readonly HttpClient _httpClient;
 
-        private const string fields = "name;cioc;currencies;flag;regionalBlocs;population;timezones;languages;capital;borders;region";
+        private const string fields = "name;alpha3Code;currencies;flag;regionalBlocs;population;timezones;languages;capital;borders;region";
 
         public APIClient(HttpClient httpClient)
         {

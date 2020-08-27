@@ -1,0 +1,115 @@
+﻿@layout MainLayout
+@page "/country-route/{Origin}/{Destiny}"
+
+<h1>Rota entre @Origin e @Destiny </h1>
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="card mb-3">
+            @if (OriginCountry is null)
+            {
+                <div class="card-body">
+                    <div class="d-flex justify-content-center">
+                        <div class="spinner-border" role="status">
+                            <span class="sr-only">Carregando...</span>
+                        </div>
+                    </div>
+                </div>
+            }
+            else
+            {
+                <div class="card-header">
+                    <img src="@OriginCountry.Flag" height="36" /> @OriginCountry.Name
+                </div>
+                <div class="card-body">
+                    <b>Nome:</b> @OriginCountry.Name <br />
+                    <b>Sigle:</b> @OriginCountry.Abbreviation<br />
+                    <b>Moedas:</b> @OriginCountry.Currencies<br />
+                    <b>Blocos Econômicos:</b> @OriginCountry.EconomicBlocs<br />
+                    <b>População:</b> @OriginCountry.Population<br />
+                    <b>Timezone:</b> @OriginCountry.Timezone<br />
+                    <b>Línguas:</b> @OriginCountry.Languages<br />
+                    <b>Capital:</b> @OriginCountry.Capital<br />
+                    <b>Fronteiras:</b> @OriginCountry.Borders<br />
+                </div>
+                <div class="card-footer">
+                    <button @onclick="()=>GoBackTo(OriginCountry.Name)" class="btn btn-primary">Voltar para os Detalhes</button>
+                </div>
+            }
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="card mb-3">
+            @if (DestinyCountry is null)
+            {
+                <div class="card-body">
+                    <div class="d-flex justify-content-center">
+                        <div class="spinner-border" role="status">
+                            <span class="sr-only">Carregando...</span>
+                        </div>
+                    </div>
+                </div>
+            }
+            else
+            {
+                <div class="card-header">
+                    <img src="@DestinyCountry.Flag" height="36" /> @DestinyCountry.Name
+                </div>
+                <div class="card-body">
+                    <b>Nome:</b> @DestinyCountry.Name <br />
+                    <b>Sigle:</b> @DestinyCountry.Abbreviation<br />
+                    <b>Moedas:</b> @DestinyCountry.Currencies<br />
+                    <b>Blocos Econômicos:</b> @DestinyCountry.EconomicBlocs<br />
+                    <b>População:</b> @DestinyCountry.Population<br />
+                    <b>Timezone:</b> @DestinyCountry.Timezone<br />
+                    <b>Línguas:</b> @DestinyCountry.Languages<br />
+                    <b>Capital:</b> @DestinyCountry.Capital<br />
+                    <b>Fronteiras:</b> @DestinyCountry.Borders<br />
+                </div>
+                <div class="card-footer">
+                    <button @onclick="()=>GoBackTo(DestinyCountry.Name)" class="btn btn-primary">Voltar para os Detalhes</button>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">Rota</div>
+            <div class="card-body">
+                @if (Route is null)
+                {
+                    <div class="card-body">
+                        <div class="d-flex justify-content-center">
+                            <div class="spinner-border" role="status">
+                                <span class="sr-only">Carregando...</span>
+                            </div>
+                        </div>
+                    </div>
+                }
+                else if (Route.Length == 0)
+                {
+                    <div class="card-body">
+                        <div class="d-flex justify-content-center">
+                            <span class="sr-only">Não foi possível montar uma rota para esses países.</span>
+                        </div>
+                    </div>
+                }
+                else
+                {
+                    <ul class="list-group">
+                        @foreach (var country in Route)
+                        {
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <img src="@country.Flag" width="24" /> @country.Name
+                                <button @onclick="()=>GoBackTo(country.Name)" class="btn btn-primary">Ver Detalhes</button>
+                            </li>
+                        }
+                    </ul>
+                }
+            </div>
+        </div>
+    </div>
+</div>
