@@ -31,5 +31,9 @@ else
             <button @onclick="()=>GoBack()" class="btn btn-primary">Voltar para lista</button>
         </div>
     </div>
+
+    <CountryDetailsRegion Name="@Country.Region" OnDestinyCountrySelected="DestinyCountrySelected" />
 }
+
+
 

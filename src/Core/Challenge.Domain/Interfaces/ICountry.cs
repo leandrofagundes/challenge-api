@@ -6,6 +6,7 @@
         string Name { get; }
         string Abbreviation { get; }
         string Flag { get; }
+        string Region { get; }
         long Population { get; }
         string Capital { get; }
         string[] Timezones { get; }

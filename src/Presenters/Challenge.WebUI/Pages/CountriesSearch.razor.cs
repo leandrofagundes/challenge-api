@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Challenge.WebUI.Pages
 {
-    public partial class CountriesSearch
+    public partial class CountriesSearch : IDisposable
     {
         [Inject]
         private ICountryModel CountryModel { get; set; }
@@ -53,7 +53,13 @@ namespace Challenge.WebUI.Pages
 
         protected void NavigateToCountryDetails(string countryName)
         {
-            NavigationManager.NavigateTo($"country-details/{countryName}", true);
+            NavigationManager.NavigateTo($"country-details/{countryName}", false);
+        }
+
+        public void Dispose()
+        {
+            this.TokenSource?.Cancel();
+            this.TokenSource?.Dispose();
         }
     }
 }

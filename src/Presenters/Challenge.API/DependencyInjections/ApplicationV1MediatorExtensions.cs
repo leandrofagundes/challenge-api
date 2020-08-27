@@ -31,6 +31,12 @@ namespace Challenge.API.DependencyInjections
 
             builder.On<Application.UseCases.V1.Countries.Find.InputData>().PipelineAsync()
                 .Call<Application.UseCases.V1.Countries.Find.IUseCase>((handler, request) => handler.Execute(request));
+
+            builder.On<Application.UseCases.V1.Countries.GetByRegion.InputData>().PipelineAsync()
+                .Call<Application.UseCases.V1.Countries.GetByRegion.IUseCase>((handler, request) => handler.Execute(request));
+
+            builder.On<Application.UseCases.V1.Countries.GetRoute.InputData>().PipelineAsync()
+                .Call<Application.UseCases.V1.Countries.GetRoute.IUseCase>((handler, request) => handler.Execute(request));
         }
     }
 }

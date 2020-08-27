@@ -6,8 +6,10 @@ namespace Challenge.API.DependencyInjections
     {
         public static IServiceCollection AddV1UseCases(this IServiceCollection services)
         {
-            services.AddScoped<Challenge.Application.UseCases.V1.Countries.Find.IUseCase, Challenge.Application.UseCases.V1.Countries.Find.UseCase>();
-            services.AddScoped<Challenge.Application.UseCases.V1.Countries.Get.IUseCase, Challenge.Application.UseCases.V1.Countries.Get.UseCase>();
+            services.AddScoped<Application.UseCases.V1.Countries.Find.IUseCase, Application.UseCases.V1.Countries.Find.UseCase>();
+            services.AddScoped<Application.UseCases.V1.Countries.Get.IUseCase, Application.UseCases.V1.Countries.Get.UseCase>();
+            services.AddScoped<Application.UseCases.V1.Countries.GetByRegion.IUseCase, Application.UseCases.V1.Countries.GetByRegion.UseCase>();
+            services.AddScoped<Application.UseCases.V1.Countries.GetRoute.IUseCase, Application.UseCases.V1.Countries.GetRoute.UseCase>();
 
             return services;
         }

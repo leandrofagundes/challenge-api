@@ -12,18 +12,48 @@ namespace Challenge.CountryServiceProxy.RestCountrieAPI
         private readonly JsonSerializerOptions JsonOptions = new JsonSerializerOptions { PropertyNameCaseInsensitive = true, IgnoreNullValues = true };
         private readonly HttpClient _httpClient;
 
+        private const string fields = "name;alpha3Code;currencies;flag;regionalBlocs;population;timezones;languages;capital;borders;region";
+
         public APIClient(HttpClient httpClient)
         {
             _httpClient = httpClient;
         }
 
-        public async Task<CountryDTO[]> GetFromRemote()
+        public async Task<CountryDTO[]> GetAllFromRemote()
         {
             CountryDTO[] countries = null;
             HttpResponseMessage response;
             try
             {
-                response = await _httpClient.GetAsync("v2/all?fields=name;cioc;currencies;flag;regionalBlocs;population;timezones;languages;capital;borders");
+                response = await _httpClient.GetAsync($"v2/all?fields={fields}");
+            }
+            catch (WebException webException)
+            {
+                throw new InvalidOperationException(webException.Message);
+            }
+            catch (HttpRequestException httpRequestEx)
+            {
+                throw new InvalidOperationException(httpRequestEx.Message);
+            }
+
+            if (response.IsSuccessStatusCode)
+            {
+                var jsonResult = await response.Content.ReadAsStringAsync();
+                countries = DeserializeResponseData<CountryDTO[]>(jsonResult);
+            }
+            else
+                await CreateException(response);
+
+            return countries;
+        }
+
+        public async Task<CountryDTO[]> GetRegionFromRemote(string regionName)
+        {
+            CountryDTO[] countries = null;
+            HttpResponseMessage response;
+            try
+            {
+                response = await _httpClient.GetAsync($"v2/region/{regionName}?fields={fields}");
             }
             catch (WebException webException)
             {

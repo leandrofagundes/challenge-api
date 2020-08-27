@@ -25,6 +25,24 @@
             <response code="404">Não foi encontrado nenhum conteúdo para o país informado.</response>
             <response code="500">Ocorreu um erro no servidor.</response>
         </member>
+        <member name="M:Challenge.API.UseCases.V1.Countries.GetByRegion.CountriesController.Get(System.String)">
+            <summary>
+            Busca uma lista de países de um determinado continente.
+            </summary>
+            <param name="regionName">Nome do continente que deseja-se obter os países.</param>
+            <returns>O retorno <see cref="F:Microsoft.AspNetCore.Http.StatusCodes.Status200OK"/> contendo a lista de países encontrados. Essa lista pode ser vazia.</returns>
+            <response code="500">Ocorreu um erro no servidor.</response>
+        </member>
+        <member name="M:Challenge.API.UseCases.V1.Countries.GetRoute.CountriesController.Get(System.String,System.String)">
+            <summary>
+            Busca a rota entre dois países.
+            </summary>
+            <param name="origin">Nome do país de origem que deseja-se obter a rota.</param>
+            <param name="destiny">Nome do país destino que deseja-se obter a rota.</param>
+            <returns>O retorno <see cref="F:Microsoft.AspNetCore.Http.StatusCodes.Status200OK"/> contendo a lista de países encontrados. Essa lista pode ser vazia.</returns>
+            <response code="400">Os dados dos países informados são inválidos.</response>
+            <response code="500">Ocorreu um erro no servidor.</response>
+        </member>
         <member name="M:Challenge.API.UseCases.V1.Countries.Get.CountriesController.Get(System.String,System.Threading.CancellationToken)">
             <summary>
             Busca uma lista de países baseado no filtro informado.

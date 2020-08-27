@@ -1,25 +1,26 @@
 # Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+TODO:
 
 # Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
+1.	Clonar o repositório
+2.	Inicializar o Docker Desktop (containers Windows)
+3.	Abrir a Solution src\Challenge.sln para a API. Executar e identificar a porta em que o IIS subiu a aplicação.
+4.	Abrir a Solution src\Challenge-Blazor.sln e alterar \wwwroot\appsettings.json o valor de baseUrl para o caminho/porta da aplicação do passo 3.
+5.  O Swagger da api roda na Url /swagger do endereço:porta da aplicação.
 
 # Build and Test
-TODO: Describe and show how to build your code and run the tests. 
-
-# Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
-
-If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
-
+Os testes podem ser executados diretamente do Visual Studio na Solution \src\Challenge.sln
 
 # Observações
 
-Não consegui utilizar o NumericCode para identificar os países. Não passou nos testes pois nem todo país possuí este código.  "name": "Republic of Kosovo"
+Gostaria de desenvolver várias pequenas melhorias ainda como:
+ - Criação de mais testes;
+ - Criação dos value objects para os tipos de dados com validações;
+ - Criação dos testes unitários dos value objects;
+ - Mais validações de integridade de dados recebidos (inputdatas);
+ - Algumas interfaces para ResponseData e RequestData;
+ - Inserir o Docker ou remover ele da aplicação API pois não está em uso;
+ - Retorno de mensagens mais amigáveis no Blazor;
+ - Fazer a busca funcionar por nome dos países em Português (ou localizado conforme ferramenta/api);
+ - Meu outro repositório (show-me-the-code) apresenta a utilização com um microserviço básico + docker;
+ 

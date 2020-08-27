@@ -6,6 +6,7 @@
         public string Abbreviation { get; set; }
         public string Currencies { get; set; }
         public string EconomicBlocs { get; set; }
+        public string Region { get; set; }
         public string Flag { get; set; }
         public long Population { get; set; }
         public string Timezone { get; set; }

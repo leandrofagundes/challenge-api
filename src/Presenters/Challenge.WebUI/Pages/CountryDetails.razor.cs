@@ -23,6 +23,11 @@ namespace Challenge.WebUI.Pages
             this.Country = await CountryModel.GetDetails(Name);
         }
 
+        public void DestinyCountrySelected(object args)
+        {
+            NavigationManager.NavigateTo($"/country-route/{Name}/{args}");
+        }
+
         public void GoBack()
         {
             NavigationManager.NavigateTo("/countries");
